@@ -76,7 +76,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>Interface with bootstrap-select.</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md88"></a>
+<h3><a class="anchor" id="autotoc_md86"></a>
 ‘.selectpicker('val’)`</h3>
 <p>You can set the selected value by calling the <code>val</code> method on the element.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;val&#39;, &#39;Mustard&#39;);</div>
@@ -88,22 +88,22 @@ $(function() {
 <div class="line">// this is the equivalent of the above</div>
 <div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;val&#39;, &#39;Mustard&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md90"></a>
+<h3><a class="anchor" id="autotoc_md88"></a>
 ‘.selectpicker('selectAll’)`</h3>
 <p>This will select all items in a multi-select.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;selectAll&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md92"></a>
+<h3><a class="anchor" id="autotoc_md90"></a>
 ‘.selectpicker('deselectAll’)`</h3>
 <p>This will deselect all items in a multi-select.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;deselectAll&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md94"></a>
+<h3><a class="anchor" id="autotoc_md92"></a>
 ‘.selectpicker('render’)`</h3>
 <p>You can force a re-render of the bootstrap-select ui with the <code>render</code> method. This is useful if you programatically change any underlying values that affect the layout of the element.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;render&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md96"></a>
+<h3><a class="anchor" id="autotoc_md94"></a>
 ‘.selectpicker('mobile’)`</h3>
 <p>Enable mobile scrolling by calling &lsquo;$(&rsquo;.selectpicker').selectpicker('mobile')`. This enables the device's native menu for select menus.</p>
 <p>The method for detecting the browser is left up to the user.</p>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line">  $(&#39;.selectpicker&#39;).selectpicker(&#39;mobile&#39;);</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md98"></a>
+<h3><a class="anchor" id="autotoc_md96"></a>
 ‘.selectpicker('setStyle’)`</h3>
 <p>Modify the class(es) associated with either the button itself or its container.</p>
 <p>If changing the class on the container:</p>
@@ -126,7 +126,7 @@ $(function() {
 <div class="line">// Remove Class</div>
 <div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;setStyle&#39;, &#39;btn-large&#39;, &#39;remove&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md100"></a>
+<h3><a class="anchor" id="autotoc_md98"></a>
 ‘.selectpicker('refresh’)`</h3>
 <p>To programmatically update a select with JavaScript, first manipulate the select, then use the <code>refresh</code> method to update the UI to match the new state. This is necessary when removing or adding options, or when disabling/enabling a select via JavaScript.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;refresh&#39;);</div>
@@ -155,22 +155,22 @@ $(function() {
 </div><!-- fragment --><p>&lt;script type="text/javascript"&gt; window.onload = function () { var $re = $('.remove-example'), $de = $('.disable-example');</p>
 <p>$('.rm-mustard').click(function () { $re.find('[value=Mustard]').remove(); $re.selectpicker('refresh'); }); $('.rm-ketchup').click(function () { $re.find('[value=Ketchup]').remove(); $re.selectpicker('refresh'); }); $('.rm-relish').click(function () { $re.find('[value=Relish]').remove(); $re.selectpicker('refresh'); }); $('.ex-disable').click(function () { $de.prop('disabled', true); $de.selectpicker('refresh'); }); $('.ex-enable').click(function () { $de.prop('disabled', false); $de.selectpicker('refresh'); }); }; &lt;/script&gt;</p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md102"></a>
+<h3><a class="anchor" id="autotoc_md100"></a>
 ‘.selectpicker('toggle’)`</h3>
 <p>Programmatically toggles the bootstrap-select menu open/closed.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;toggle&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md104"></a>
+<h3><a class="anchor" id="autotoc_md102"></a>
 ‘.selectpicker('hide’)`</h3>
 <p>To programmatically hide the bootstrap-select use the <code>hide</code> method (this only affects the visibility of the bootstrap-select itself).</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;hide&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md106"></a>
+<h3><a class="anchor" id="autotoc_md104"></a>
 ‘.selectpicker('show’)`</h3>
 <p>To programmatically show the bootstrap-select use the <code>show</code> method (this only affects the visibility of the bootstrap-select itself).</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;show&#39;);</div>
 </div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md108"></a>
+<h3><a class="anchor" id="autotoc_md106"></a>
 ‘.selectpicker('destroy’)`</h3>
 <p>To programmatically destroy the bootstrap-select, use the <code>destroy</code> method.</p>
 <div class="fragment"><div class="line">$(&#39;.selectpicker&#39;).selectpicker(&#39;destroy&#39;);</div>

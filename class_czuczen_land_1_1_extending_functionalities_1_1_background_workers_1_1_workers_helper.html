@@ -81,18 +81,25 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.WorkersHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa pomocnicza dla worker'ów.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_workers_helper.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cfb7d5f120bfeec456f768b4b1212a9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_workers_helper.html#a6cfb7d5f120bfeec456f768b4b1212a9">CalculatePeriodTime</a> (int periodTime, Stopwatch watch)</td></tr>
-<tr class="memdesc:a6cfb7d5f120bfeec456f768b4b1212a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Korekta timer'a dla workerów.  <br /></td></tr>
+<tr class="memdesc:a6cfb7d5f120bfeec456f768b4b1212a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Korekta timer'a dla workerów. Oblicza nowy czas cyklu pracy pracownika.  <br /></td></tr>
 <tr class="separator:a6cfb7d5f120bfeec456f768b4b1212a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59cdbae295ffa32577778fb5f010a3ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_workers_helper.html#a59cdbae295ffa32577778fb5f010a3ba">ResetQuest</a> (<a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest.html">Quest</a> quest, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest_requirements_progress.html">QuestRequirementsProgress</a> questRequirementsProgress)</td></tr>
+<tr class="memdesc:a59cdbae295ffa32577778fb5f010a3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resetuje zadanie i jego postęp.  <br /></td></tr>
 <tr class="separator:a59cdbae295ffa32577778fb5f010a3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697f0cee491abb5073eebe3ec352205f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_workers_helper.html#a697f0cee491abb5073eebe3ec352205f">ResetStartedQuestsLimit</a> (List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt; allPlantationStorages, List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; allDistricts, bool weeklyLimitTimeHasPassed)</td></tr>
+<tr class="separator:a697f0cee491abb5073eebe3ec352205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_workers_helper_8cs_source.html#l00008">8</a> of file <a class="el" href="_workers_helper_8cs_source.html">WorkersHelper.cs</a>.</p>
+<div class="textblock"><p>Klasa pomocnicza dla worker'ów. </p>
+
+<p class="definition">Definition at line <a class="el" href="_workers_helper_8cs_source.html#l00012">12</a> of file <a class="el" href="_workers_helper_8cs_source.html">WorkersHelper.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6cfb7d5f120bfeec456f768b4b1212a9" name="a6cfb7d5f120bfeec456f768b4b1212a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cfb7d5f120bfeec456f768b4b1212a9">&#9670;&#160;</a></span>CalculatePeriodTime()</h2>
@@ -128,15 +135,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Korekta timer'a dla workerów. </p>
+<p>Korekta timer'a dla workerów. Oblicza nowy czas cyklu pracy pracownika. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">periodTime</td><td></td></tr>
-    <tr><td class="paramname">watch</td><td></td></tr>
+    <tr><td class="paramname">periodTime</td><td>Domyślny czas cyklu pracy.</td></tr>
+    <tr><td class="paramname">watch</td><td>Zegar mierzacy czas trwania operacji</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Nowy czas cyklu zmniejszony o czas trwania operacji</dd></dl>
 
 </div>
 </div>
@@ -174,7 +181,60 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_workers_helper_8cs_source.html#l00019">19</a> of file <a class="el" href="_workers_helper_8cs_source.html">WorkersHelper.cs</a>.</p>
+<p>Resetuje zadanie i jego postęp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quest</td><td>Zadanie do zresetowania</td></tr>
+    <tr><td class="paramname">questRequirementsProgress</td><td>Postęp wymagań zadania</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_workers_helper_8cs_source.html#l00029">29</a> of file <a class="el" href="_workers_helper_8cs_source.html">WorkersHelper.cs</a>.</p>
+
+</div>
+</div>
+<a id="a697f0cee491abb5073eebe3ec352205f" name="a697f0cee491abb5073eebe3ec352205f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697f0cee491abb5073eebe3ec352205f">&#9670;&#160;</a></span>ResetStartedQuestsLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.WorkersHelper.ResetStartedQuestsLimit </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td>
+          <td class="paramname"><em>allPlantationStorages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td>
+          <td class="paramname"><em>allDistricts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>weeklyLimitTimeHasPassed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_workers_helper_8cs_source.html#l00045">45</a> of file <a class="el" href="_workers_helper_8cs_source.html">WorkersHelper.cs</a>.</p>
 
 </div>
 </div>

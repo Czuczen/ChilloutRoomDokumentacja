@@ -13,7 +13,7 @@ var searchData=
   ['questsstateupdater_2ecs_10',['QuestsStateUpdater.cs',['../_quests_state_updater_8cs.html',1,'']]],
   ['questsstateupdaterhelper_2ecs_11',['QuestsStateUpdaterHelper.cs',['../_quests_state_updater_helper_8cs.html',1,'']]],
   ['questsviewmodel_2ecs_12',['QuestsViewModel.cs',['../_quests_view_model_8cs.html',1,'']]],
-  ['questupdatedefinitiondto_2ecs_13',['QuestUpdateDefinitionDto.cs',['../_quest_update_definition_dto_8cs.html',1,'']]],
-  ['questupdatedto_2ecs_14',['QuestUpdateDto.cs',['../_quest_update_dto_8cs.html',1,'']]],
+  ['questupdatedto_2ecs_13',['QuestUpdateDto.cs',['../_quest_update_dto_8cs.html',1,'']]],
+  ['questupdateplayerrecorddto_2ecs_14',['QuestUpdatePlayerRecordDto.cs',['../_quest_update_player_record_dto_8cs.html',1,'']]],
   ['questwithrequirements_2ecs_15',['QuestWithRequirements.cs',['../_quest_with_requirements_8cs.html',1,'']]]
 ];

@@ -6,8 +6,8 @@ var searchData=
   ['waterdto_2ecs_3',['WaterDto.cs',['../_water_dto_8cs.html',1,'']]],
   ['waterfieldshrnames_2ecs_4',['WaterFieldsHrNames.cs',['../_water_fields_hr_names_8cs.html',1,'']]],
   ['waterinfoviewmodel_2ecs_5',['WaterInfoViewModel.cs',['../_water_info_view_model_8cs.html',1,'']]],
-  ['waterupdatedefinitiondto_2ecs_6',['WaterUpdateDefinitionDto.cs',['../_water_update_definition_dto_8cs.html',1,'']]],
-  ['waterupdatedto_2ecs_7',['WaterUpdateDto.cs',['../_water_update_dto_8cs.html',1,'']]],
+  ['waterupdatedto_2ecs_6',['WaterUpdateDto.cs',['../_water_update_dto_8cs.html',1,'']]],
+  ['waterupdateplayerrecorddto_2ecs_7',['WaterUpdatePlayerRecordDto.cs',['../_water_update_player_record_dto_8cs.html',1,'']]],
   ['workershelper_2ecs_8',['WorkersHelper.cs',['../_workers_helper_8cs.html',1,'']]],
   ['wrongdummyparsermodel_2ecs_9',['WrongDummyParserModel.cs',['../_wrong_dummy_parser_model_8cs.html',1,'']]]
 ];

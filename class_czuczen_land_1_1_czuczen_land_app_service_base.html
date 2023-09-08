@@ -82,39 +82,49 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.CzuczenLandAppServiceBase Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstrakcyjna klasa bazowa dla serwisów aplikacyjnych.  
+ <a href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.CzuczenLandAppServiceBase:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_czuczen_land_1_1_czuczen_land_app_service_base.png" usemap="#CzuczenLand.CzuczenLandAppServiceBase_map" alt=""/>
   <map id="CzuczenLand.CzuczenLandAppServiceBase_map" name="CzuczenLand.CzuczenLandAppServiceBase_map">
-<area href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html" alt="CzuczenLand.Authorization.Accounts.AccountAppService" shape="rect" coords="0,112,342,136"/>
-<area href="class_czuczen_land_1_1_configuration_1_1_configuration_app_service.html" alt="CzuczenLand.Configuration.ConfigurationAppService" shape="rect" coords="352,112,694,136"/>
-<area href="class_czuczen_land_1_1_sessions_1_1_session_app_service.html" alt="CzuczenLand.Sessions.SessionAppService" shape="rect" coords="704,112,1046,136"/>
+<area href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html" title="Klasa obsługująca usługi dla konta użytkownika." alt="CzuczenLand.Authorization.Accounts.AccountAppService" shape="rect" coords="0,112,342,136"/>
+<area href="class_czuczen_land_1_1_configuration_1_1_configuration_app_service.html" title="Klasa obsługująca usługi konfiguracji." alt="CzuczenLand.Configuration.ConfigurationAppService" shape="rect" coords="352,112,694,136"/>
+<area href="class_czuczen_land_1_1_sessions_1_1_session_app_service.html" title="Serwis aplikacyjny do obsługi sesji." alt="CzuczenLand.Sessions.SessionAppService" shape="rect" coords="704,112,1046,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae0b0084658995e9a91270df5cd98a29b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#ae0b0084658995e9a91270df5cd98a29b">CzuczenLandAppServiceBase</a> ()</td></tr>
+<tr class="memdesc:ae0b0084658995e9a91270df5cd98a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy CzuczenLandAppServiceBase.  <br /></td></tr>
 <tr class="separator:ae0b0084658995e9a91270df5cd98a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43d0a26d0e71d17260cc75ce67fc30e2"><td class="memItemLeft" align="right" valign="top">virtual async Task&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#a43d0a26d0e71d17260cc75ce67fc30e2">GetCurrentUserAsync</a> ()</td></tr>
+<tr class="memdesc:a43d0a26d0e71d17260cc75ce67fc30e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera aktualnego użytkownika asynchronicznie.  <br /></td></tr>
 <tr class="separator:a43d0a26d0e71d17260cc75ce67fc30e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a46366dd78cb4bc3f94f8f6bd8a46cd"><td class="memItemLeft" align="right" valign="top">virtual Task&lt; <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant.html">Tenant</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#a2a46366dd78cb4bc3f94f8f6bd8a46cd">GetCurrentTenantAsync</a> ()</td></tr>
+<tr class="memdesc:a2a46366dd78cb4bc3f94f8f6bd8a46cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera aktualnego dzierżawce asynchronicznie.  <br /></td></tr>
 <tr class="separator:a2a46366dd78cb4bc3f94f8f6bd8a46cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11055d522eba2677aafa6b6feed9095b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#a11055d522eba2677aafa6b6feed9095b">CheckErrors</a> (IdentityResult identityResult)</td></tr>
+<tr class="memdesc:a11055d522eba2677aafa6b6feed9095b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza błędy IdentityResult i obsługuje lokalizację błędów.  <br /></td></tr>
 <tr class="separator:a11055d522eba2677aafa6b6feed9095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a66dcf1ac3d7ac5204b5ea2155683375e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_manager.html">TenantManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#a66dcf1ac3d7ac5204b5ea2155683375e">TenantManager</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a66dcf1ac3d7ac5204b5ea2155683375e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menadżer dzierżawców.  <br /></td></tr>
 <tr class="separator:a66dcf1ac3d7ac5204b5ea2155683375e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac89a57663831f01bd82c46ed8aae5627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user_manager.html">UserManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_czuczen_land_app_service_base.html#ac89a57663831f01bd82c46ed8aae5627">UserManager</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac89a57663831f01bd82c46ed8aae5627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menadżer użytkowników.  <br /></td></tr>
 <tr class="separator:ac89a57663831f01bd82c46ed8aae5627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00012">12</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<div class="textblock"><p>Abstrakcyjna klasa bazowa dla serwisów aplikacyjnych. </p>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00015">15</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae0b0084658995e9a91270df5cd98a29b" name="ae0b0084658995e9a91270df5cd98a29b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0b0084658995e9a91270df5cd98a29b">&#9670;&#160;</a></span>CzuczenLandAppServiceBase()</h2>
@@ -139,7 +149,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00018">18</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Konstruktor klasy CzuczenLandAppServiceBase. </p>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00031">31</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>
@@ -168,7 +180,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00039">39</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Sprawdza błędy IdentityResult i obsługuje lokalizację błędów. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identityResult</td><td>Wynik operacji Identity.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00064">64</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>
@@ -195,7 +215,10 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00034">34</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Pobiera aktualnego dzierżawce asynchronicznie. </p>
+<dl class="section return"><dt>Returns</dt><dd>Obiekt najemcy.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00055">55</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>
@@ -222,7 +245,10 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00023">23</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Pobiera aktualnego użytkownika asynchronicznie. </p>
+<dl class="section return"><dt>Returns</dt><dd>Obiekt użytkownika.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00040">40</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>
@@ -247,7 +273,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00014">14</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Menadżer dzierżawców. </p>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00020">20</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>
@@ -271,7 +299,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00016">16</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
+<p>Menadżer użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_czuczen_land_app_service_base_8cs_source.html#l00025">25</a> of file <a class="el" href="_czuczen_land_app_service_base_8cs_source.html">CzuczenLandAppServiceBase.cs</a>.</p>
 
 </div>
 </div>

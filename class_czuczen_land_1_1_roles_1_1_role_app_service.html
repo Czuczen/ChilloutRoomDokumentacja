@@ -84,63 +84,83 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.Roles.RoleAppService Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Serwis aplikacyjny do obsługi ról.  
+ <a href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.Roles.RoleAppService:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_czuczen_land_1_1_roles_1_1_role_app_service.png" usemap="#CzuczenLand.Roles.RoleAppService_map" alt=""/>
   <map id="CzuczenLand.Roles.RoleAppService_map" name="CzuczenLand.Roles.RoleAppService_map">
-<area href="interface_czuczen_land_1_1_roles_1_1_i_role_app_service.html" alt="CzuczenLand.Roles.IRoleAppService" shape="rect" coords="563,56,1116,80"/>
+<area href="interface_czuczen_land_1_1_roles_1_1_i_role_app_service.html" title="Interfejs serwisu aplikacyjnego do obsługi ról." alt="CzuczenLand.Roles.IRoleAppService" shape="rect" coords="563,56,1116,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a49af5b5e929bdb5465c713f3d65dcd2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a49af5b5e929bdb5465c713f3d65dcd2a">RoleAppService</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt; repository, <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role_manager.html">RoleManager</a> roleManager, <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user_manager.html">UserManager</a> userManager, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a>, long &gt; userRepository, IRepository&lt; UserRole, long &gt; userRoleRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt; roleRepository)</td></tr>
+<tr class="memdesc:a49af5b5e929bdb5465c713f3d65dcd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a49af5b5e929bdb5465c713f3d65dcd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abd46357f9e50b5236193774707607b"><td class="memItemLeft" align="right" valign="top">override async Task&lt; <a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_role_dto.html">RoleDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a5abd46357f9e50b5236193774707607b">CreateAsync</a> (<a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_create_role_dto.html">CreateRoleDto</a> input)</td></tr>
+<tr class="memdesc:a5abd46357f9e50b5236193774707607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nową rolę.  <br /></td></tr>
 <tr class="separator:a5abd46357f9e50b5236193774707607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47fd9fdf56525fab412c54fd21174f1d"><td class="memItemLeft" align="right" valign="top">override async Task&lt; <a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_role_dto.html">RoleDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a47fd9fdf56525fab412c54fd21174f1d">UpdateAsync</a> (<a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_role_dto.html">RoleDto</a> input)</td></tr>
+<tr class="memdesc:a47fd9fdf56525fab412c54fd21174f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje istniejącą rolę.  <br /></td></tr>
 <tr class="separator:a47fd9fdf56525fab412c54fd21174f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceaf429f8fa63609165efdf9254b5947"><td class="memItemLeft" align="right" valign="top">override async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#aceaf429f8fa63609165efdf9254b5947">DeleteAsync</a> (EntityDto&lt; int &gt; input)</td></tr>
+<tr class="memdesc:aceaf429f8fa63609165efdf9254b5947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rolę z systemu.  <br /></td></tr>
 <tr class="separator:aceaf429f8fa63609165efdf9254b5947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3609d1061839734401e1135c78258c4d"><td class="memItemLeft" align="right" valign="top">Task&lt; ListResultDto&lt; <a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_permission_dto.html">PermissionDto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a3609d1061839734401e1135c78258c4d">GetAllPermissions</a> ()</td></tr>
+<tr class="memdesc:a3609d1061839734401e1135c78258c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera wszystkie uprawnienia.  <br /></td></tr>
 <tr class="separator:a3609d1061839734401e1135c78258c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab808c38143bccd1e501d5aa48bd70dc4"><td class="memItemLeft" align="right" valign="top">Task&lt; ListResultDto&lt; <a class="el" href="class_czuczen_land_1_1_roles_1_1_dto_1_1_permission_dto.html">PermissionDto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_roles_1_1_i_role_app_service.html#ab808c38143bccd1e501d5aa48bd70dc4">GetAllPermissions</a> ()</td></tr>
+<tr class="memdesc:ab808c38143bccd1e501d5aa48bd70dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera wszystkie uprawnienia.  <br /></td></tr>
 <tr class="separator:ab808c38143bccd1e501d5aa48bd70dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ada8c8a839cd012544c66218cbfb101e3"><td class="memItemLeft" align="right" valign="top">override IQueryable&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#ada8c8a839cd012544c66218cbfb101e3">CreateFilteredQuery</a> (PagedResultRequestDto input)</td></tr>
+<tr class="memdesc:ada8c8a839cd012544c66218cbfb101e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy zapytanie do bazy danych z uwzględnieniem filtrowania.  <br /></td></tr>
 <tr class="separator:ada8c8a839cd012544c66218cbfb101e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4754f19f96a4e366f00dc6b5993894"><td class="memItemLeft" align="right" valign="top">override Task&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#aab4754f19f96a4e366f00dc6b5993894">GetEntityByIdAsync</a> (int id)</td></tr>
+<tr class="memdesc:aab4754f19f96a4e366f00dc6b5993894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera rolę z uwzględnieniem jej uprawnień.  <br /></td></tr>
 <tr class="separator:aab4754f19f96a4e366f00dc6b5993894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4e54bfeebd3ed5ca89a724e1fe1bbe"><td class="memItemLeft" align="right" valign="top">override IQueryable&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#aba4e54bfeebd3ed5ca89a724e1fe1bbe">ApplySorting</a> (IQueryable&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt; query, PagedResultRequestDto input)</td></tr>
+<tr class="memdesc:aba4e54bfeebd3ed5ca89a724e1fe1bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sortuje wyniki zapytania.  <br /></td></tr>
 <tr class="separator:aba4e54bfeebd3ed5ca89a724e1fe1bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523f57c774706c571b6926b8ead4515d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a523f57c774706c571b6926b8ead4515d">CheckErrors</a> (IdentityResult identityResult)</td></tr>
+<tr class="memdesc:a523f57c774706c571b6926b8ead4515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza błędy wynikające z operacji Identity.  <br /></td></tr>
 <tr class="separator:a523f57c774706c571b6926b8ead4515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a64b81a381acd193232568c4699abd886"><td class="memItemLeft" align="right" valign="top">Task&lt; List&lt; long &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a64b81a381acd193232568c4699abd886">GetUsersInRoleAsync</a> (string roleName)</td></tr>
+<tr class="memdesc:a64b81a381acd193232568c4699abd886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera listę identyfikatorów użytkowników należących do danej roli.  <br /></td></tr>
 <tr class="separator:a64b81a381acd193232568c4699abd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a073f906691978669e3a47c6ef187d197"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role_manager.html">RoleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a073f906691978669e3a47c6ef187d197">_roleManager</a></td></tr>
+<tr class="memdesc:a073f906691978669e3a47c6ef187d197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menadżer ról.  <br /></td></tr>
 <tr class="separator:a073f906691978669e3a47c6ef187d197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e945e8a4339f6e9ffb1376c40fc1481"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user_manager.html">UserManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a3e945e8a4339f6e9ffb1376c40fc1481">_userManager</a></td></tr>
+<tr class="memdesc:a3e945e8a4339f6e9ffb1376c40fc1481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menadżer użytkowników.  <br /></td></tr>
 <tr class="separator:a3e945e8a4339f6e9ffb1376c40fc1481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b6c5dcadfc8a873455b92ac6f9d2ab"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a>, long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a92b6c5dcadfc8a873455b92ac6f9d2ab">_userRepository</a></td></tr>
+<tr class="memdesc:a92b6c5dcadfc8a873455b92ac6f9d2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium użytkowników.  <br /></td></tr>
 <tr class="separator:a92b6c5dcadfc8a873455b92ac6f9d2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afceb68bce50562da9d4b2a879cf85667"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; UserRole, long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#afceb68bce50562da9d4b2a879cf85667">_userRoleRepository</a></td></tr>
+<tr class="memdesc:afceb68bce50562da9d4b2a879cf85667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium przypisania ról do użytkowników.  <br /></td></tr>
 <tr class="separator:afceb68bce50562da9d4b2a879cf85667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a844b82993cfbc540524d2e183a9f8414"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role.html">Role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_roles_1_1_role_app_service.html#a844b82993cfbc540524d2e183a9f8414">_roleRepository</a></td></tr>
+<tr class="memdesc:a844b82993cfbc540524d2e183a9f8414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium ról.  <br /></td></tr>
 <tr class="separator:a844b82993cfbc540524d2e183a9f8414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00020">20</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<div class="textblock"><p>Serwis aplikacyjny do obsługi ról. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00023">23</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a49af5b5e929bdb5465c713f3d65dcd2a" name="a49af5b5e929bdb5465c713f3d65dcd2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49af5b5e929bdb5465c713f3d65dcd2a">&#9670;&#160;</a></span>RoleAppService()</h2>
@@ -192,7 +212,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00028">28</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repository</td><td>Repozytorium ról.</td></tr>
+    <tr><td class="paramname">roleManager</td><td>Menadżer ról.</td></tr>
+    <tr><td class="paramname">userManager</td><td>Menadżer użytkowników.</td></tr>
+    <tr><td class="paramname">userRepository</td><td>Repozytorium użytkowników.</td></tr>
+    <tr><td class="paramname">userRoleRepository</td><td>Repozytorium przypisania ról do użytkowników.</td></tr>
+    <tr><td class="paramname">roleRepository</td><td>Repozytorium ról.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00060">60</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -231,7 +264,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00135">135</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Sortuje wyniki zapytania. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Zapytanie do posortowania.</td></tr>
+    <tr><td class="paramname">input</td><td>Parametry zapytania.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Posortowane zapytanie.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00206">206</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -259,7 +302,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00140">140</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Sprawdza błędy wynikające z operacji Identity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identityResult</td><td>Rezultat operacji Identity.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00215">215</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -279,7 +330,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00044">44</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Tworzy nową rolę. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Dane do utworzenia roli.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Stworzona rola jako DTO.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00081">81</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -307,7 +367,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00124">124</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Tworzy zapytanie do bazy danych z uwzględnieniem filtrowania. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Parametry zapytania.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zapytanie do bazy danych z uwzględnieniem filtrowania.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00184">184</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -327,7 +396,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00084">84</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Usuwa rolę z systemu. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Identyfikator roli do usunięcia.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00130">130</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -346,9 +423,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pobiera wszystkie uprawnienia. </p>
+<dl class="section return"><dt>Returns</dt><dd>Lista wszystkich uprawnień jako DTO.</dd></dl>
+
 <p>Implements <a class="el" href="interface_czuczen_land_1_1_roles_1_1_i_role_app_service.html#ab808c38143bccd1e501d5aa48bd70dc4">CzuczenLand.Roles.IRoleAppService</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00115">115</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00170">170</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -376,7 +456,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00129">129</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Pobiera rolę z uwzględnieniem jej uprawnień. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Identyfikator roli.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rola wraz z uprawnieniami.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00194">194</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -404,7 +493,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00104">104</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Pobiera listę identyfikatorów użytkowników należących do danej roli. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roleName</td><td>Nazwa roli.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Lista identyfikatorów użytkowników.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00155">155</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -424,7 +522,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00064">64</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Aktualizuje istniejącą rolę. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Dane do aktualizacji roli.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zaktualizowana rola jako DTO.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00106">106</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -449,7 +556,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00022">22</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Menadżer ról. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00028">28</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -473,7 +582,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00026">26</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Repozytorium ról. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00048">48</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -497,7 +608,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00023">23</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Menadżer użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00033">33</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -521,7 +634,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00024">24</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Repozytorium użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00038">38</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -545,7 +660,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00025">25</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
+<p>Repozytorium przypisania ról do użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_role_app_service_8cs_source.html#l00043">43</a> of file <a class="el" href="_role_app_service_8cs_source.html">RoleAppService.cs</a>.</p>
 
 </div>
 </div>

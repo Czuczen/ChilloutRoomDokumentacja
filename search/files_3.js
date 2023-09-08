@@ -21,8 +21,8 @@ var searchData=
   ['bonushubhelper_2ecs_18',['BonusHubHelper.cs',['../_bonus_hub_helper_8cs.html',1,'']]],
   ['bonusinfoviewmodel_2ecs_19',['BonusInfoViewModel.cs',['../_bonus_info_view_model_8cs.html',1,'']]],
   ['bonusupdate_2ecs_20',['BonusUpdate.cs',['../_bonus_update_8cs.html',1,'']]],
-  ['bonusupdatedefinitiondto_2ecs_21',['BonusUpdateDefinitionDto.cs',['../_bonus_update_definition_dto_8cs.html',1,'']]],
-  ['bonusupdatedto_2ecs_22',['BonusUpdateDto.cs',['../_bonus_update_dto_8cs.html',1,'']]],
+  ['bonusupdatedto_2ecs_21',['BonusUpdateDto.cs',['../_bonus_update_dto_8cs.html',1,'']]],
+  ['bonusupdateplayerrecorddto_2ecs_22',['BonusUpdatePlayerRecordDto.cs',['../_bonus_update_player_record_dto_8cs.html',1,'']]],
   ['bonusviewmodel_2ecs_23',['BonusViewModel.cs',['../_bonus_view_model_8cs.html',1,'']]],
   ['bundleconfig_2ecs_24',['BundleConfig.cs',['../_bundle_config_8cs.html',1,'']]]
 ];

@@ -84,51 +84,65 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.MultiTenancy.TenantAppService Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Serwis aplikacyjny dla operacji na dzierżawcach.  
+ <a href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.MultiTenancy.TenantAppService:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.png" usemap="#CzuczenLand.MultiTenancy.TenantAppService_map" alt=""/>
   <map id="CzuczenLand.MultiTenancy.TenantAppService_map" name="CzuczenLand.MultiTenancy.TenantAppService_map">
-<area href="interface_czuczen_land_1_1_multi_tenancy_1_1_i_tenant_app_service.html" alt="CzuczenLand.MultiTenancy.ITenantAppService" shape="rect" coords="615,56,1220,80"/>
+<area href="interface_czuczen_land_1_1_multi_tenancy_1_1_i_tenant_app_service.html" title="Interfejs serwisu aplikacyjnego dla operacji na dzierżawcach." alt="CzuczenLand.MultiTenancy.ITenantAppService" shape="rect" coords="615,56,1220,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d18efae3355ff7cdd2f81715f837e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#a0d18efae3355ff7cdd2f81715f837e9d">TenantAppService</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant.html">Tenant</a>, int &gt; repository, <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_manager.html">TenantManager</a> tenantManager, <a class="el" href="class_czuczen_land_1_1_editions_1_1_edition_manager.html">EditionManager</a> editionManager, <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user_manager.html">UserManager</a> userManager, <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role_manager.html">RoleManager</a> roleManager, IAbpZeroDbMigrator abpZeroDbMigrator)</td></tr>
+<tr class="memdesc:a0d18efae3355ff7cdd2f81715f837e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a0d18efae3355ff7cdd2f81715f837e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac214456a021c689cf87bd85482611d06"><td class="memItemLeft" align="right" valign="top">override async Task&lt; <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_dto_1_1_tenant_dto.html">TenantDto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#ac214456a021c689cf87bd85482611d06">CreateAsync</a> (<a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_dto_1_1_create_tenant_dto.html">CreateTenantDto</a> input)</td></tr>
+<tr class="memdesc:ac214456a021c689cf87bd85482611d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowego dzierżawcę.  <br /></td></tr>
 <tr class="separator:ac214456a021c689cf87bd85482611d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea94de4242ae299f831894c8f8b1b8d"><td class="memItemLeft" align="right" valign="top">override async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#a3ea94de4242ae299f831894c8f8b1b8d">DeleteAsync</a> (EntityDto&lt; int &gt; input)</td></tr>
+<tr class="memdesc:a3ea94de4242ae299f831894c8f8b1b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa dzierżawcę.  <br /></td></tr>
 <tr class="separator:a3ea94de4242ae299f831894c8f8b1b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0f3504c0fd82555495f6d591b6166f0d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#a0f3504c0fd82555495f6d591b6166f0d">MapToEntity</a> (<a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_dto_1_1_tenant_dto.html">TenantDto</a> updateInput, <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant.html">Tenant</a> entity)</td></tr>
+<tr class="memdesc:a0f3504c0fd82555495f6d591b6166f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapuje dane wejściowe na encję dzierżawcy.  <br /></td></tr>
 <tr class="separator:a0f3504c0fd82555495f6d591b6166f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae49cf898aec5f70470f949c93f64efa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#ae49cf898aec5f70470f949c93f64efa8">CheckErrors</a> (IdentityResult identityResult)</td></tr>
+<tr class="memdesc:ae49cf898aec5f70470f949c93f64efa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza błędy w wyniku operacji IdentityResult i obsługuje je.  <br /></td></tr>
 <tr class="separator:ae49cf898aec5f70470f949c93f64efa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afcdad4701fa952ae4150f93dbb059dad"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_manager.html">TenantManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#afcdad4701fa952ae4150f93dbb059dad">_tenantManager</a></td></tr>
+<tr class="memdesc:afcdad4701fa952ae4150f93dbb059dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager dzierżawców.  <br /></td></tr>
 <tr class="separator:afcdad4701fa952ae4150f93dbb059dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af259363cfaa12e437dd0c6139ebc5bbb"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_editions_1_1_edition_manager.html">EditionManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#af259363cfaa12e437dd0c6139ebc5bbb">_editionManager</a></td></tr>
+<tr class="memdesc:af259363cfaa12e437dd0c6139ebc5bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager edycji.  <br /></td></tr>
 <tr class="separator:af259363cfaa12e437dd0c6139ebc5bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741582245146217eb37b947320ef9bd6"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_authorization_1_1_roles_1_1_role_manager.html">RoleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#a741582245146217eb37b947320ef9bd6">_roleManager</a></td></tr>
+<tr class="memdesc:a741582245146217eb37b947320ef9bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager ról.  <br /></td></tr>
 <tr class="separator:a741582245146217eb37b947320ef9bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f047c6ef9b804a0cf0ad1463776145"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user_manager.html">UserManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#ad7f047c6ef9b804a0cf0ad1463776145">_userManager</a></td></tr>
+<tr class="memdesc:ad7f047c6ef9b804a0cf0ad1463776145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager użytkowników.  <br /></td></tr>
 <tr class="separator:ad7f047c6ef9b804a0cf0ad1463776145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac2aa8606772652ad72c27b9dc61645"><td class="memItemLeft" align="right" valign="top">readonly IAbpZeroDbMigrator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_multi_tenancy_1_1_tenant_app_service.html#acac2aa8606772652ad72c27b9dc61645">_abpZeroDbMigrator</a></td></tr>
+<tr class="memdesc:acac2aa8606772652ad72c27b9dc61645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrator bazy danych ABP Zero.  <br /></td></tr>
 <tr class="separator:acac2aa8606772652ad72c27b9dc61645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00021">21</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<div class="textblock"><p>Serwis aplikacyjny dla operacji na dzierżawcach. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00024">24</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0d18efae3355ff7cdd2f81715f837e9d" name="a0d18efae3355ff7cdd2f81715f837e9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d18efae3355ff7cdd2f81715f837e9d">&#9670;&#160;</a></span>TenantAppService()</h2>
@@ -180,7 +194,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00029">29</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repository</td><td>Repozytorium dzierżawców.</td></tr>
+    <tr><td class="paramname">tenantManager</td><td>Manager dzierżawców.</td></tr>
+    <tr><td class="paramname">editionManager</td><td>Manager edycji.</td></tr>
+    <tr><td class="paramname">userManager</td><td>Manager użytkowników.</td></tr>
+    <tr><td class="paramname">roleManager</td><td>Manager ról.</td></tr>
+    <tr><td class="paramname">abpZeroDbMigrator</td><td>Migrator bazy danych ABP Zero.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00061">61</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -209,7 +236,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00110">110</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Sprawdza błędy w wyniku operacji IdentityResult i obsługuje je. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">identityResult</td><td>Wynik operacji IdentityResult.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00160">160</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -229,7 +264,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00047">47</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Tworzy nowego dzierżawcę. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Dane wejściowe dla nowego dzierżawcy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Dto dzierżawcy.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00084">84</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -249,7 +293,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00102">102</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Usuwa dzierżawcę. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Identyfikator dzierżawcy do usunięcia.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00148">148</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -287,7 +339,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00094">94</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Mapuje dane wejściowe na encję dzierżawcy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updateInput</td><td>Dane wejściowe do aktualizacji dzierżawcy.</td></tr>
+    <tr><td class="paramname">entity</td><td>Encja dzierżawcy.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00136">136</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -312,7 +373,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00027">27</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Migrator bazy danych ABP Zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00049">49</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -336,7 +399,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00024">24</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Manager edycji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00034">34</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -360,7 +425,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00025">25</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Manager ról. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00039">39</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -384,7 +451,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00023">23</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Manager dzierżawców. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00029">29</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>
@@ -408,7 +477,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00026">26</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
+<p>Manager użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_tenant_app_service_8cs_source.html#l00044">44</a> of file <a class="el" href="_tenant_app_service_8cs_source.html">TenantAppService.cs</a>.</p>
 
 </div>
 </div>

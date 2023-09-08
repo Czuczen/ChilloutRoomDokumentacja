@@ -81,10 +81,10 @@ $(function() {
 </div><!-- fragment --><p>To TEST Push, run:</p>
 <div class="fragment"><div class="line">npm run test</div>
 </div><!-- fragment --><p>See? Not hard at all. Unfortunately the Notifications API doesn't always play nicely with local sites, so don't get discouraged if you try running Push in a local HTML file and it doesn't work.</p>
-<h2><a class="anchor" id="autotoc_md247"></a>
+<h2><a class="anchor" id="autotoc_md245"></a>
 Testing &amp; Travis</h2>
 <p>Push uses the <a href="https://karma-runner.github.io/1.0/index.html">Karma</a> JavaScript test runner, so read up on that if you want to make changes to any of the tests that are run. These tests are run post-push by <a href="https://travis-ci.org">Travis CI</a>, so look into that if you want to make any Travis configuration changes. Although, at this point I'd say Travis is all set. The tests might want to be expanded though.</p>
-<h2><a class="anchor" id="autotoc_md248"></a>
+<h2><a class="anchor" id="autotoc_md246"></a>
 REAL IMPORTANT STUFF</h2>
 <p><b>THERE IS ONLY ONE RULE TO PUSH CLUB</b> (and no, it's not that you can't talk about it). <b>WHENEVER</b> you make changes to <code>push.js</code>, <b>RECOMPILE</b> and commit <code>push.min.js</code> as well. Until this build process can be wrapped into a sexy git hook of some sort, this is how changes to the library need to occur. <b>YOUR PR WILL NOT BE APPROVED UNLESS THIS HAPPENS</b>. That said, I did let it slide once because I wasn't thinking, but that's why I wrote this file to make sure it will never happen again.</p>
 <p>Outside of that, contributing should not be at all scary and should be a fun and positive process. Now go out and write some killer JS! Wait... is there even such a thing? </p>

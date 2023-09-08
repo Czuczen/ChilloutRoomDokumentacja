@@ -104,21 +104,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac0e23bf89f1cdef9132f9dafd657641"><td class="memItemLeft" align="right" valign="top">async Task&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_plant_service.html#aac0e23bf89f1cdef9132f9dafd657641">CreatePlayerPlant</a> (<a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_plantation_manager_1_1_dto_1_1_create_plant.html">CreatePlant</a> createPlant, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">ExtendingModels.Models.General.District</a> district, string userName, int plantationStorageId, List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_bonus.html">Bonus</a> &gt; activeBonuses, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">ExtendingModels.Models.General.GeneratedType</a> generatedType)</td></tr>
 <tr class="memdesc:aac0e23bf89f1cdef9132f9dafd657641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy roślinę gracza.  <br /></td></tr>
 <tr class="separator:aac0e23bf89f1cdef9132f9dafd657641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad888711fc7820c7c195a65a86493c8da"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_plant_service.html#ad888711fc7820c7c195a65a86493c8da">DeleteConnectedPlantsToProductDefinitionAsync</a> (int productId, string entityName)</td></tr>
-<tr class="memdesc:ad888711fc7820c7c195a65a86493c8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rośliny powiązane z usuniętym produktem.  <br /></td></tr>
-<tr class="separator:ad888711fc7820c7c195a65a86493c8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2c16cabaef470f50b4496cd9ae27ee"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_plant_service.html#aee2c16cabaef470f50b4496cd9ae27ee">DeletePlantAndSetUseCountConnectedProductsAsync</a> (string fieldToCompare, int value, bool needIgnoreChange=true)</td></tr>
-<tr class="memdesc:aee2c16cabaef470f50b4496cd9ae27ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa roślinę i aktualizuje powiązane produkty. Jeśli dzielnica fast się skończyła a użytkownik miał jakieś rośliny to dodawały się rekordy ignorowania ale z racji że już nie było magazynu plantacji state updater builder nie usuwał ignorowania. Dlatego potrzebna jest flaga needIgnoreChange.  <br /></td></tr>
-<tr class="separator:aee2c16cabaef470f50b4496cd9ae27ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54bda2501eefb5781e0936f164861a3"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_plant_service.html#ae54bda2501eefb5781e0936f164861a3">DeleteConnectedPlantsToProduct</a> (int productId, string entityName)</td></tr>
+<tr class="memdesc:ae54bda2501eefb5781e0936f164861a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rośliny powiązane z usuniętym produktem.  <br /></td></tr>
+<tr class="separator:ae54bda2501eefb5781e0936f164861a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54004ef9aa1b783b6c239355289a12f"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_plant_service.html#ab54004ef9aa1b783b6c239355289a12f">DeletePlantAndSetUseCountConnectedProducts</a> (string fieldToCompare, int value, bool needIgnoreChange=true)</td></tr>
+<tr class="memdesc:ab54004ef9aa1b783b6c239355289a12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa roślinę i aktualizuje powiązane produkty. Jeśli dzielnica fast się skończyła a użytkownik miał jakieś rośliny to dodawały się rekordy ignorowania ale z racji że już nie było magazynu plantacji state updater builder nie usuwał ignorowania. Dlatego potrzebna jest flaga needIgnoreChange.  <br /></td></tr>
+<tr class="separator:ab54004ef9aa1b783b6c239355289a12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab138948b56e621e1914381848e432e77"><td class="memItemLeft" align="right" valign="top">Task&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#ab138948b56e621e1914381848e432e77">CreatePlayerPlant</a> (<a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_plantation_manager_1_1_dto_1_1_create_plant.html">CreatePlant</a> createPlant, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">ExtendingModels.Models.General.District</a> district, string userName, int plantationStorageId, List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_bonus.html">Bonus</a> &gt; activeBonuses, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">ExtendingModels.Models.General.GeneratedType</a> generatedType)</td></tr>
 <tr class="memdesc:ab138948b56e621e1914381848e432e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy roślinę gracza.  <br /></td></tr>
 <tr class="separator:ab138948b56e621e1914381848e432e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dc57dc44215d2c0b1931e8508412cf"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a23dc57dc44215d2c0b1931e8508412cf">DeleteConnectedPlantsToProductDefinitionAsync</a> (int productId, string entityName)</td></tr>
-<tr class="memdesc:a23dc57dc44215d2c0b1931e8508412cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rośliny powiązane z usuniętym produktem.  <br /></td></tr>
-<tr class="separator:a23dc57dc44215d2c0b1931e8508412cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095be97660fac4b7455e03f4faa3db3f"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a095be97660fac4b7455e03f4faa3db3f">DeletePlantAndSetUseCountConnectedProductsAsync</a> (string fieldToCompare, int value, bool needIgnoreChange=true)</td></tr>
-<tr class="memdesc:a095be97660fac4b7455e03f4faa3db3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa roślinę i aktualizuje powiązane produkty. Jeśli dzielnica fast się skończyła a użytkownik miał jakieś rośliny to dodawały się rekordy ignorowania ale z racji że już nie było magazynu plantacji state updater builder nie usuwał ignorowania. Dlatego potrzebna jest flaga needIgnoreChange.  <br /></td></tr>
-<tr class="separator:a095be97660fac4b7455e03f4faa3db3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca87055445e184d6c5bc895a58cd96c"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a6ca87055445e184d6c5bc895a58cd96c">DeleteConnectedPlantsToProduct</a> (int productId, string entityName)</td></tr>
+<tr class="memdesc:a6ca87055445e184d6c5bc895a58cd96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rośliny powiązane z usuniętym produktem.  <br /></td></tr>
+<tr class="separator:a6ca87055445e184d6c5bc895a58cd96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6f2a94e8fe37b4c5730f461691e546"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a3e6f2a94e8fe37b4c5730f461691e546">DeletePlantAndSetUseCountConnectedProducts</a> (string fieldToCompare, int value, bool needIgnoreChange=true)</td></tr>
+<tr class="memdesc:a3e6f2a94e8fe37b4c5730f461691e546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa roślinę i aktualizuje powiązane produkty. Jeśli dzielnica fast się skończyła a użytkownik miał jakieś rośliny to dodawały się rekordy ignorowania ale z racji że już nie było magazynu plantacji state updater builder nie usuwał ignorowania. Dlatego potrzebna jest flaga needIgnoreChange.  <br /></td></tr>
+<tr class="separator:a3e6f2a94e8fe37b4c5730f461691e546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -280,14 +280,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad888711fc7820c7c195a65a86493c8da" name="ad888711fc7820c7c195a65a86493c8da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad888711fc7820c7c195a65a86493c8da">&#9670;&#160;</a></span>DeleteConnectedPlantsToProductDefinitionAsync()</h2>
+<a id="ae54bda2501eefb5781e0936f164861a3" name="ae54bda2501eefb5781e0936f164861a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54bda2501eefb5781e0936f164861a3">&#9670;&#160;</a></span>DeleteConnectedPlantsToProduct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.PlantService.DeleteConnectedPlantsToProductDefinitionAsync </td>
+          <td class="memname">async Task CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.PlantService.DeleteConnectedPlantsToProduct </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>productId</em>, </td>
@@ -315,20 +315,20 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a23dc57dc44215d2c0b1931e8508412cf">CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.IPlantService</a>.</p>
+<p>Implements <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a6ca87055445e184d6c5bc895a58cd96c">CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.IPlantService</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_plant_service_8cs_source.html#l00139">139</a> of file <a class="el" href="_plant_service_8cs_source.html">PlantService.cs</a>.</p>
 
 </div>
 </div>
-<a id="aee2c16cabaef470f50b4496cd9ae27ee" name="aee2c16cabaef470f50b4496cd9ae27ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee2c16cabaef470f50b4496cd9ae27ee">&#9670;&#160;</a></span>DeletePlantAndSetUseCountConnectedProductsAsync()</h2>
+<a id="ab54004ef9aa1b783b6c239355289a12f" name="ab54004ef9aa1b783b6c239355289a12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54004ef9aa1b783b6c239355289a12f">&#9670;&#160;</a></span>DeletePlantAndSetUseCountConnectedProducts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">async Task CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.PlantService.DeletePlantAndSetUseCountConnectedProductsAsync </td>
+          <td class="memname">async Task CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.PlantService.DeletePlantAndSetUseCountConnectedProducts </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fieldToCompare</em>, </td>
@@ -363,7 +363,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a095be97660fac4b7455e03f4faa3db3f">CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.IPlantService</a>.</p>
+<p>Implements <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_plant_1_1_base_1_1_i_plant_service.html#a3e6f2a94e8fe37b4c5730f461691e546">CzuczenLand.ExtendingFunctionalities.Services.General.Plant.Base.IPlantService</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_plant_service_8cs_source.html#l00172">172</a> of file <a class="el" href="_plant_service_8cs_source.html">PlantService.cs</a>.</p>
 

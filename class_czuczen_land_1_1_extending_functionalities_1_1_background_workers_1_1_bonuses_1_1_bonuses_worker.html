@@ -86,6 +86,9 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Bonuses.BonusesWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa wykonująca pracę w cyklach związaną z czasem aktywności wzmocnień.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Bonuses.BonusesWorker:</div>
 <div class="dyncontent">
@@ -96,46 +99,58 @@ Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.B
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a58c63dd62fc257ca9dae7c5aedd4e194"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a58c63dd62fc257ca9dae7c5aedd4e194">BonusesWorker</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_bonus.html">Bonus</a> &gt; bonusRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; districtRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt; plantationStorageRepository, AbpTimer timer)</td></tr>
+<tr class="memdesc:a58c63dd62fc257ca9dae7c5aedd4e194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a58c63dd62fc257ca9dae7c5aedd4e194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a35b12bee8d0ecac4626eff80071ce183"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a35b12bee8d0ecac4626eff80071ce183">DoWork</a> ()</td></tr>
+<tr class="memdesc:a35b12bee8d0ecac4626eff80071ce183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające.  <br /></td></tr>
 <tr class="separator:a35b12bee8d0ecac4626eff80071ce183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a9d7f90379025e0e2645875bdd42bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#ae3a9d7f90379025e0e2645875bdd42bd">ExecuteWork</a> ()</td></tr>
+<tr class="memdesc:ae3a9d7f90379025e0e2645875bdd42bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przygotowuje dane potrzebne do ustawienia czasu aktywności wzmocnień. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje.  <br /></td></tr>
 <tr class="separator:ae3a9d7f90379025e0e2645875bdd42bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a582259a308a8a1f3460af13e7aa44289"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_bonus.html">Bonus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a582259a308a8a1f3460af13e7aa44289">ActiveBuffs</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a582259a308a8a1f3460af13e7aa44289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista aktywnych wzmocnień.  <br /></td></tr>
 <tr class="separator:a582259a308a8a1f3460af13e7aa44289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e62a93b913ac348afdd3852489da76"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a28e62a93b913ac348afdd3852489da76">PlantationStorages</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a28e62a93b913ac348afdd3852489da76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista magazynów plantacji powiązanych z aktywnymi wzmocnieniami.  <br /></td></tr>
 <tr class="separator:a28e62a93b913ac348afdd3852489da76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12accb79b2f963f3592d3ace96f80477"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a12accb79b2f963f3592d3ace96f80477">Districts</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a12accb79b2f963f3592d3ace96f80477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista wszystkich dzielnic.  <br /></td></tr>
 <tr class="separator:a12accb79b2f963f3592d3ace96f80477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:adf603ec6a5ae9a8141bbd3df05e00f03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#adf603ec6a5ae9a8141bbd3df05e00f03">ReduceAvailabilityTime</a> ()</td></tr>
+<tr class="memdesc:adf603ec6a5ae9a8141bbd3df05e00f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redukuje czas aktywności wzmocnień.  <br /></td></tr>
 <tr class="separator:adf603ec6a5ae9a8141bbd3df05e00f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af6771df14c5538f9f43dd314f6c77890"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_bonus.html">Bonus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#af6771df14c5538f9f43dd314f6c77890">_bonusRepository</a></td></tr>
+<tr class="memdesc:af6771df14c5538f9f43dd314f6c77890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dla bonusów.  <br /></td></tr>
 <tr class="separator:af6771df14c5538f9f43dd314f6c77890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1361dd842b79b6964e17115b36442ed8"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a1361dd842b79b6964e17115b36442ed8">_districtRepository</a></td></tr>
+<tr class="memdesc:a1361dd842b79b6964e17115b36442ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dla dzielnic.  <br /></td></tr>
 <tr class="separator:a1361dd842b79b6964e17115b36442ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5f3af44be2ed87b7f61b5bdd871bc6"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#aee5f3af44be2ed87b7f61b5bdd871bc6">_plantationStorageRepository</a></td></tr>
+<tr class="memdesc:aee5f3af44be2ed87b7f61b5bdd871bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dla magazynów plantacji.  <br /></td></tr>
 <tr class="separator:aee5f3af44be2ed87b7f61b5bdd871bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a846c3844c426ec77d061d5d27fb035b0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_bonuses_1_1_bonuses_worker.html#a846c3844c426ec77d061d5d27fb035b0">PeriodTime</a> = 1000</td></tr>
+<tr class="memdesc:a846c3844c426ec77d061d5d27fb035b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okres czasu (w milisekundach) między cyklami pracy.  <br /></td></tr>
 <tr class="separator:a846c3844c426ec77d061d5d27fb035b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00015">15</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<div class="textblock"><p>Klasa wykonująca pracę w cyklach związaną z czasem aktywności wzmocnień. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00018">18</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a58c63dd62fc257ca9dae7c5aedd4e194" name="a58c63dd62fc257ca9dae7c5aedd4e194"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58c63dd62fc257ca9dae7c5aedd4e194">&#9670;&#160;</a></span>BonusesWorker()</h2>
@@ -175,7 +190,18 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00029">29</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonusRepository</td><td>Repozytorium dla bonusów.</td></tr>
+    <tr><td class="paramname">districtRepository</td><td>Repozytorium dla dzielnic.</td></tr>
+    <tr><td class="paramname">plantationStorageRepository</td><td>Repozytorium dla magazynów plantacji.</td></tr>
+    <tr><td class="paramname">timer</td><td>AbpTimer do określania czasu cyklu pracy.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00064">64</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -203,7 +229,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00043">43</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00083">83</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -230,7 +258,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00052">52</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Przygotowuje dane potrzebne do ustawienia czasu aktywności wzmocnień. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00097">97</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -257,7 +287,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00068">68</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Redukuje czas aktywności wzmocnień. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00116">116</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -282,7 +314,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00017">17</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Repozytorium dla bonusów. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00023">23</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -306,7 +340,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00018">18</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Repozytorium dla dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00028">28</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -330,7 +366,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00019">19</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Repozytorium dla magazynów plantacji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00033">33</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -354,7 +392,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Okres czasu (w milisekundach) między cyklami pracy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00038">38</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -379,7 +419,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00022">22</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Lista aktywnych wzmocnień. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00044">44</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -403,7 +445,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00026">26</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Lista wszystkich dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00054">54</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -427,7 +471,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00024">24</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
+<p>Lista magazynów plantacji powiązanych z aktywnymi wzmocnieniami. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bonuses_worker_8cs_source.html#l00049">49</a> of file <a class="el" href="_bonuses_worker_8cs_source.html">BonusesWorker.cs</a>.</p>
 
 </div>
 </div>

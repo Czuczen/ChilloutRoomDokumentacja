@@ -84,59 +84,77 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.SelectListLoader Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa odpowiedzialna za ładowanie danych do pola listy wyboru formularza (SelectList) w panelu konfiguracji.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.SelectListLoader:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.png" usemap="#CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.SelectListLoader_map" alt=""/>
   <map id="CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.SelectListLoader_map" name="CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.SelectListLoader_map">
-<area href="interface_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_i_select_list_loader.html" alt="CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.ISelectListLoader" shape="rect" coords="0,56,540,80"/>
+<area href="interface_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_i_select_list_loader.html" title="Interfejs dla ładowania opcji pól typu SelectList." alt="CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.ISelectListLoader" shape="rect" coords="0,56,540,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a662d28cc69117a8463893ac23f25ce74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a662d28cc69117a8463893ac23f25ce74">SelectListLoader</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_dried_fruit.html">DriedFruit</a> &gt; driedFruitRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; districtRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">GeneratedType</a> &gt; generatedTypeRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a>, long &gt; userRepository, <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_repositories_1_1_custom_repository_1_1_ba4b91fc0395498183157ccca0254b92.html">ICustomRepositoryLoader</a> customRepositoryLoader, IPermissionChecker permissionChecker)</td></tr>
+<tr class="memdesc:a662d28cc69117a8463893ac23f25ce74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a662d28cc69117a8463893ac23f25ce74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e79d2db7f53279ac2b4f32ea5e7d4d7"><td class="memItemLeft" align="right" valign="top">async Task&lt; Dictionary&lt; string, object &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a2e79d2db7f53279ac2b4f32ea5e7d4d7">GetSelectFieldsOptions</a> (List&lt; PropertyInfo &gt; properties, List&lt; object &gt; values, string entity, bool isEdit, bool isAdmin)</td></tr>
+<tr class="memdesc:a2e79d2db7f53279ac2b4f32ea5e7d4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera opcje dla pól typu SelectList.  <br /></td></tr>
 <tr class="separator:a2e79d2db7f53279ac2b4f32ea5e7d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade90bff7cdddbffc3d463e1c1fab3167"><td class="memItemLeft" align="right" valign="top">Task&lt; Dictionary&lt; string, object &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_i_select_list_loader.html#ade90bff7cdddbffc3d463e1c1fab3167">GetSelectFieldsOptions</a> (List&lt; PropertyInfo &gt; properties, List&lt; object &gt; values, string entity, bool isEdit, bool isAdmin)</td></tr>
+<tr class="memdesc:ade90bff7cdddbffc3d463e1c1fab3167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera opcje dla pól typu SelectList.  <br /></td></tr>
 <tr class="separator:ade90bff7cdddbffc3d463e1c1fab3167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:af465fdf1bb22f27232e515bb4116e0db"><td class="memItemLeft" align="right" valign="top">IAbpSession&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#af465fdf1bb22f27232e515bb4116e0db">AbpSession</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:af465fdf1bb22f27232e515bb4116e0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Właściwość pozwalająca na uzyskanie dostępu do sesji Abp, która przechowuje informacje dotyczące aktualnie zalogowanego użytkownika. Właściwość musi być public oraz mieć getter i setter dla poprawnego działania wstrzykiwania właściwości.  <br /></td></tr>
 <tr class="separator:af465fdf1bb22f27232e515bb4116e0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411f8855c9e92c66c71577cc2eda004b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_entity_analysis_state_builder_8cs.html#a9675c319f099747d6bf156aa0618e87e">ILogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a411f8855c9e92c66c71577cc2eda004b">Logger</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a411f8855c9e92c66c71577cc2eda004b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfejs ILogger służy do rejestrowania komunikatów z aplikacji. Właściwość musi być public oraz mieć getter i setter dla poprawnego działania wstrzykiwania właściwości.  <br /></td></tr>
 <tr class="separator:a411f8855c9e92c66c71577cc2eda004b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a17ba8f30e6a3f48c3aebf5cb1322256f"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">GeneratedType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a17ba8f30e6a3f48c3aebf5cb1322256f">GetAvailableGeneratedTypes</a> (string entity, int? updatingObjGeneratedTypeid)</td></tr>
+<tr class="memdesc:a17ba8f30e6a3f48c3aebf5cb1322256f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera dostępne typy generowane dla danej encji.  <br /></td></tr>
 <tr class="separator:a17ba8f30e6a3f48c3aebf5cb1322256f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32927091a612f3db873b83e3a0bf6c04"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a32927091a612f3db873b83e3a0bf6c04">GetAvailableUsersForSelectOptions</a> (string entity, bool isEdit, List&lt; PropertyInfo &gt; properties, List&lt; object &gt; values, bool currUserIsAdmin)</td></tr>
+<tr class="memdesc:a32927091a612f3db873b83e3a0bf6c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera dostępnych użytkowników dla pola typu SelectList.  <br /></td></tr>
 <tr class="separator:a32927091a612f3db873b83e3a0bf6c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a545ec207505b52e229429df25d7937"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">GeneratedType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a2a545ec207505b52e229429df25d7937">GetFilteredGeneratedTypes</a> (string entity)</td></tr>
+<tr class="memdesc:a2a545ec207505b52e229429df25d7937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pobiera przefiltrowane typy generowane dla danej encji.  <br /></td></tr>
 <tr class="separator:a2a545ec207505b52e229429df25d7937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a81cf501fab70ec66eeb3092ccda9f90f"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_products_1_1_dried_fruit.html">DriedFruit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a81cf501fab70ec66eeb3092ccda9f90f">_driedFruitRepository</a></td></tr>
+<tr class="memdesc:a81cf501fab70ec66eeb3092ccda9f90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium suszu.  <br /></td></tr>
 <tr class="separator:a81cf501fab70ec66eeb3092ccda9f90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5562cf2b31d71232e64f6223b1ef3904"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a5562cf2b31d71232e64f6223b1ef3904">_districtRepository</a></td></tr>
+<tr class="memdesc:a5562cf2b31d71232e64f6223b1ef3904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dzielnic.  <br /></td></tr>
 <tr class="separator:a5562cf2b31d71232e64f6223b1ef3904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9ebcbf4f98147dddbf98d2efa9ef75"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_generated_type.html">GeneratedType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a1d9ebcbf4f98147dddbf98d2efa9ef75">_generatedTypeRepository</a></td></tr>
+<tr class="memdesc:a1d9ebcbf4f98147dddbf98d2efa9ef75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium typów generowanych.  <br /></td></tr>
 <tr class="separator:a1d9ebcbf4f98147dddbf98d2efa9ef75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2210866b0618f98a39dd716fea2bbfa7"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_users_1_1_user.html">User</a>, long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a2210866b0618f98a39dd716fea2bbfa7">_userRepository</a></td></tr>
+<tr class="memdesc:a2210866b0618f98a39dd716fea2bbfa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium użytkowników.  <br /></td></tr>
 <tr class="separator:a2210866b0618f98a39dd716fea2bbfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29db7b3a638bd14c81115930f992cc6b"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_repositories_1_1_custom_repository_1_1_ba4b91fc0395498183157ccca0254b92.html">ICustomRepositoryLoader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a29db7b3a638bd14c81115930f992cc6b">_customRepositoryLoader</a></td></tr>
+<tr class="memdesc:a29db7b3a638bd14c81115930f992cc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontroluje tworzenie niestandardowych repozytoriów.  <br /></td></tr>
 <tr class="separator:a29db7b3a638bd14c81115930f992cc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390323dd54c36d71b1dd743fc5a473e9"><td class="memItemLeft" align="right" valign="top">readonly IPermissionChecker&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_select_list_loader.html#a390323dd54c36d71b1dd743fc5a473e9">_permissionChecker</a></td></tr>
+<tr class="memdesc:a390323dd54c36d71b1dd743fc5a473e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiekt do sprawdzania uprawnień.  <br /></td></tr>
 <tr class="separator:a390323dd54c36d71b1dd743fc5a473e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00025">25</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<div class="textblock"><p>Klasa odpowiedzialna za ładowanie danych do pola listy wyboru formularza (SelectList) w panelu konfiguracji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00028">28</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a662d28cc69117a8463893ac23f25ce74" name="a662d28cc69117a8463893ac23f25ce74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a662d28cc69117a8463893ac23f25ce74">&#9670;&#160;</a></span>SelectListLoader()</h2>
@@ -188,7 +206,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00039">39</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">driedFruitRepository</td><td>Repozytorium suszu.</td></tr>
+    <tr><td class="paramname">districtRepository</td><td>Repozytorium dzielnic.</td></tr>
+    <tr><td class="paramname">generatedTypeRepository</td><td>Repozytorium typów generowanych.</td></tr>
+    <tr><td class="paramname">userRepository</td><td>Repozytorium użytkowników.</td></tr>
+    <tr><td class="paramname">customRepositoryLoader</td><td>Kontroluje tworzenie niestandardowych repozytoriów.</td></tr>
+    <tr><td class="paramname">permissionChecker</td><td>Obiekt do sprawdzania uprawnień.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00084">84</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -227,7 +258,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00137">137</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Pobiera dostępne typy generowane dla danej encji. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Nazwa encji obiektu.</td></tr>
+    <tr><td class="paramname">updatingObjGeneratedTypeid</td><td>Id typu generowanego aktualizowanego obiektu.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Lista dostępnych typów generowanych.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00197">197</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -283,7 +324,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00172">172</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Pobiera dostępnych użytkowników dla pola typu SelectList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Nazwa encji.</td></tr>
+    <tr><td class="paramname">isEdit</td><td>Czy edycja.</td></tr>
+    <tr><td class="paramname">properties</td><td>Lista właściwości.</td></tr>
+    <tr><td class="paramname">values</td><td>Lista wartości obiektu.</td></tr>
+    <tr><td class="paramname">currUserIsAdmin</td><td>Czy bieżący użytkownik jest administratorem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Lista dostępnych użytkowników.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00241">241</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -311,7 +365,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00214">214</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Pobiera przefiltrowane typy generowane dla danej encji. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>Nazwa encji.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Lista przefiltrowanych typów generowanych.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00288">288</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -359,9 +422,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pobiera opcje dla pól typu SelectList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">properties</td><td>Lista właściwości.</td></tr>
+    <tr><td class="paramname">values</td><td>Lista wartości obiektu.</td></tr>
+    <tr><td class="paramname">entity</td><td>Nazwa encji.</td></tr>
+    <tr><td class="paramname">isEdit</td><td>Czy edycja.</td></tr>
+    <tr><td class="paramname">isAdmin</td><td>Czy administrator.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Słownik opcji pól typu SelectList.</dd></dl>
+
 <p>Implements <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_configuration_panel_1_1_select_list_loader_1_1_i_select_list_loader.html#ade90bff7cdddbffc3d463e1c1fab3167">CzuczenLand.ExtendingFunctionalities.ConfigurationPanel.SelectListLoader.ISelectListLoader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00058">58</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00112">112</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -386,7 +462,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00031">31</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Kontroluje tworzenie niestandardowych repozytoriów. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00053">53</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -410,7 +488,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00028">28</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Repozytorium dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00038">38</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -434,7 +514,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00027">27</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Repozytorium suszu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00033">33</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -458,7 +540,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00029">29</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Repozytorium typów generowanych. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00043">43</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -482,7 +566,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00032">32</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Obiekt do sprawdzania uprawnień. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00058">58</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -506,7 +592,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00030">30</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Repozytorium użytkowników. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00048">48</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -531,7 +619,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00034">34</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Właściwość pozwalająca na uzyskanie dostępu do sesji Abp, która przechowuje informacje dotyczące aktualnie zalogowanego użytkownika. Właściwość musi być public oraz mieć getter i setter dla poprawnego działania wstrzykiwania właściwości. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00066">66</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>
@@ -555,7 +645,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00036">36</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
+<p>Interfejs ILogger służy do rejestrowania komunikatów z aplikacji. Właściwość musi być public oraz mieć getter i setter dla poprawnego działania wstrzykiwania właściwości. </p>
+
+<p class="definition">Definition at line <a class="el" href="_select_list_loader_8cs_source.html#l00072">72</a> of file <a class="el" href="_select_list_loader_8cs_source.html">SelectListLoader.cs</a>.</p>
 
 </div>
 </div>

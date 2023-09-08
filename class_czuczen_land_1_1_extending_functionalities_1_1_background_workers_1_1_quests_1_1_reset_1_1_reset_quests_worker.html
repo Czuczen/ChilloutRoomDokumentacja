@@ -85,6 +85,9 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Quests.Reset.ResetQuestsWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa wykonująca pracę w cyklach związaną z resetowaniem zadań.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Quests.Reset.ResetQuestsWorker:</div>
 <div class="dyncontent">
@@ -95,47 +98,58 @@ Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Q
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a8e04192f567c73191a16d6f08cb831"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a0a8e04192f567c73191a16d6f08cb831">ResetQuestsWorker</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; districtRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest.html">Quest</a>, int &gt; questRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a>, int &gt; plantationStorageRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest_requirements_progress.html">QuestRequirementsProgress</a> &gt; questRequirementsProgressRepository, <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_quest_1_1_base_1_1_i_quest_service.html">IQuestService</a> questService, AbpTimer timer)</td></tr>
+<tr class="memdesc:a0a8e04192f567c73191a16d6f08cb831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a0a8e04192f567c73191a16d6f08cb831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4442e6a3698680d4a8c371027cb12015"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a4442e6a3698680d4a8c371027cb12015">DoWork</a> ()</td></tr>
-<tr class="memdesc:a4442e6a3698680d4a8c371027cb12015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. ASP.NET Boilerplate sam normalizuje godziny. Clock - <a href="https://aspnetboilerplate.com/Pages/Documents/Timing">https://aspnetboilerplate.com/Pages/Documents/Timing</a>.  <br /></td></tr>
+<tr class="memdesc:a4442e6a3698680d4a8c371027cb12015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. ASP.NET Boilerplate sam normalizuje godziny. Clock - <a href="https://aspnetboilerplate.com/Pages/Documents/Timing">https://aspnetboilerplate.com/Pages/Documents/Timing</a>.  <br /></td></tr>
 <tr class="separator:a4442e6a3698680d4a8c371027cb12015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4ed971c593bf5187e3aea756820c93"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a4b4ed971c593bf5187e3aea756820c93">ExecuteWork</a> ()</td></tr>
-<tr class="memdesc:a4b4ed971c593bf5187e3aea756820c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje.  <br /></td></tr>
+<tr class="memdesc:a4b4ed971c593bf5187e3aea756820c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resetuje ukończone zadania dzienne i tygodniowe. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje.  <br /></td></tr>
 <tr class="separator:a4b4ed971c593bf5187e3aea756820c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aa225fc1a4132cbd6b6acd456b7707570"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#aa225fc1a4132cbd6b6acd456b7707570">CurrDateTime</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa225fc1a4132cbd6b6acd456b7707570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualna data i godzina.  <br /></td></tr>
 <tr class="separator:aa225fc1a4132cbd6b6acd456b7707570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabffd608efd6d4d1def9d19e9227ca4d"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#aabffd608efd6d4d1def9d19e9227ca4d">DateOfFirstDayWeek</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aabffd608efd6d4d1def9d19e9227ca4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data pierwszego dnia tygodnia.  <br /></td></tr>
 <tr class="separator:aabffd608efd6d4d1def9d19e9227ca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a605653357f7952b4f47ae04a9a417026"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a605653357f7952b4f47ae04a9a417026">_districtRepository</a></td></tr>
+<tr class="memdesc:a605653357f7952b4f47ae04a9a417026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dzielnic.  <br /></td></tr>
 <tr class="separator:a605653357f7952b4f47ae04a9a417026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44c95a2820895bf6489c9995a89deda7"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest.html">Quest</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a44c95a2820895bf6489c9995a89deda7">_questRepository</a></td></tr>
+<tr class="memdesc:a44c95a2820895bf6489c9995a89deda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium zadań.  <br /></td></tr>
 <tr class="separator:a44c95a2820895bf6489c9995a89deda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e63c0bb8d0d2aad923ccad7552c1d9a"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a1e63c0bb8d0d2aad923ccad7552c1d9a">_plantationStorageRepository</a></td></tr>
+<tr class="memdesc:a1e63c0bb8d0d2aad923ccad7552c1d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium magazynów plantacji.  <br /></td></tr>
 <tr class="separator:a1e63c0bb8d0d2aad923ccad7552c1d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084ec0aeca4dac0ed78ef48de3af1a99"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_quest_requirements_progress.html">QuestRequirementsProgress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a084ec0aeca4dac0ed78ef48de3af1a99">_questRequirementsProgressRepository</a></td></tr>
+<tr class="memdesc:a084ec0aeca4dac0ed78ef48de3af1a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium postępu wymagań zadań.  <br /></td></tr>
 <tr class="separator:a084ec0aeca4dac0ed78ef48de3af1a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab84d7cd38dfe1259b9be6ab1172dadb7"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="interface_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_general_1_1_quest_1_1_base_1_1_i_quest_service.html">IQuestService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#ab84d7cd38dfe1259b9be6ab1172dadb7">_questService</a></td></tr>
+<tr class="memdesc:ab84d7cd38dfe1259b9be6ab1172dadb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serwis podstawowy obsługujący logikę biznesową związaną z zadaniami.  <br /></td></tr>
 <tr class="separator:ab84d7cd38dfe1259b9be6ab1172dadb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1838649134601af6366f6fd51c442cb3"><td class="memItemLeft" align="right" valign="top">IHubContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#a1838649134601af6366f6fd51c442cb3">_questHub</a></td></tr>
+<tr class="memdesc:a1838649134601af6366f6fd51c442cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontekst Huba zadań.  <br /></td></tr>
 <tr class="separator:a1838649134601af6366f6fd51c442cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ab7633e1100cb4b08f8055be017df883a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_quests_1_1_reset_1_1_reset_quests_worker.html#ab7633e1100cb4b08f8055be017df883a">PeriodTime</a> = 60000</td></tr>
+<tr class="memdesc:ab7633e1100cb4b08f8055be017df883a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okres czasu (w milisekundach) między cyklami pracy.  <br /></td></tr>
 <tr class="separator:ab7633e1100cb4b08f8055be017df883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<div class="textblock"><p>Klasa wykonująca pracę w cyklach związaną z resetowaniem zadań. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00023">23</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a8e04192f567c73191a16d6f08cb831" name="a0a8e04192f567c73191a16d6f08cb831"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a8e04192f567c73191a16d6f08cb831">&#9670;&#160;</a></span>ResetQuestsWorker()</h2>
@@ -187,7 +201,20 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00035">35</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">districtRepository</td><td>Repozytorium dzielnic.</td></tr>
+    <tr><td class="paramname">questRepository</td><td>Repozytorium zadań.</td></tr>
+    <tr><td class="paramname">plantationStorageRepository</td><td>Repozytorium magazynów plantacji.</td></tr>
+    <tr><td class="paramname">questRequirementsProgressRepository</td><td>Repozytorium postępu wymagań zadań.</td></tr>
+    <tr><td class="paramname">questService</td><td>Serwis zadań.</td></tr>
+    <tr><td class="paramname">timer</td><td>Timer do określania czasu cyklu pracy.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00081">81</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -215,9 +242,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. ASP.NET Boilerplate sam normalizuje godziny. Clock - <a href="https://aspnetboilerplate.com/Pages/Documents/Timing">https://aspnetboilerplate.com/Pages/Documents/Timing</a>. </p>
+<p>Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. ASP.NET Boilerplate sam normalizuje godziny. Clock - <a href="https://aspnetboilerplate.com/Pages/Documents/Timing">https://aspnetboilerplate.com/Pages/Documents/Timing</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00060">60</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00107">107</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -244,9 +271,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje. </p>
+<p>Resetuje ukończone zadania dzienne i tygodniowe. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje. </p>
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00077">77</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00125">125</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -271,7 +298,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00022">22</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Repozytorium dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00028">28</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -295,7 +324,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00024">24</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Repozytorium magazynów plantacji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00038">38</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -319,7 +350,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00027">27</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Kontekst Huba zadań. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00053">53</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -343,7 +376,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00023">23</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Repozytorium zadań. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00033">33</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -367,7 +402,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00025">25</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Repozytorium postępu wymagań zadań. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00043">43</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -391,7 +428,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00026">26</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Serwis podstawowy obsługujący logikę biznesową związaną z zadaniami. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00048">48</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -415,7 +454,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00028">28</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Okres czasu (w milisekundach) między cyklami pracy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00058">58</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -440,7 +481,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00030">30</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Aktualna data i godzina. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00064">64</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -464,7 +507,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00032">32</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
+<p>Data pierwszego dnia tygodnia. </p>
+
+<p class="definition">Definition at line <a class="el" href="_reset_quests_worker_8cs_source.html#l00069">69</a> of file <a class="el" href="_reset_quests_worker_8cs_source.html">ResetQuestsWorker.cs</a>.</p>
 
 </div>
 </div>

@@ -85,6 +85,9 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Don.DonWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa wykonująca pracę w cyklach związaną z ustawianiem dona dzielnicy.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Don.DonWorker:</div>
 <div class="dyncontent">
@@ -95,41 +98,52 @@ Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.D
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab74520f3d0c36e2a8634c72dd5a8ebe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#ab74520f3d0c36e2a8634c72dd5a8ebe9">DonWorker</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; districtRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_many_to_many_relations_1_1_district_don.html">DistrictDon</a> &gt; districtDonRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> &gt; playerStorageRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt; plantationStorageRepository, AbpTimer timer)</td></tr>
+<tr class="memdesc:ab74520f3d0c36e2a8634c72dd5a8ebe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:ab74520f3d0c36e2a8634c72dd5a8ebe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aee77bce9368488601259aa6ebc6be122"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#aee77bce9368488601259aa6ebc6be122">DoWork</a> ()</td></tr>
+<tr class="memdesc:aee77bce9368488601259aa6ebc6be122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające.  <br /></td></tr>
 <tr class="separator:aee77bce9368488601259aa6ebc6be122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea2028093ed142359a3fdf2bf819200f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#aea2028093ed142359a3fdf2bf819200f">ExecuteWork</a> ()</td></tr>
+<tr class="memdesc:aea2028093ed142359a3fdf2bf819200f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analizuje i ustawia donów dzielnic. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje.  <br /></td></tr>
 <tr class="separator:aea2028093ed142359a3fdf2bf819200f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a120f54e8f1cb29082a53608f01ec01a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#a120f54e8f1cb29082a53608f01ec01a9">SendDonData</a> (bool weHaveDon, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> plantationStorage, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> playerStorage, <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> district)</td></tr>
+<tr class="memdesc:a120f54e8f1cb29082a53608f01ec01a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wysyła dane o donie dzielnicy do użytkownika.  <br /></td></tr>
 <tr class="separator:a120f54e8f1cb29082a53608f01ec01a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a87c653f7ee9e284620f539ca94d52e51"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#a87c653f7ee9e284620f539ca94d52e51">_districtRepository</a></td></tr>
+<tr class="memdesc:a87c653f7ee9e284620f539ca94d52e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dzielnic.  <br /></td></tr>
 <tr class="separator:a87c653f7ee9e284620f539ca94d52e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfe5312f82dd83397be3336189ed49e"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_many_to_many_relations_1_1_district_don.html">DistrictDon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#a5cfe5312f82dd83397be3336189ed49e">_districtDonRepository</a></td></tr>
+<tr class="memdesc:a5cfe5312f82dd83397be3336189ed49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium donów dzielnic.  <br /></td></tr>
 <tr class="separator:a5cfe5312f82dd83397be3336189ed49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa382807bf3fae8dee85006dcc4356b94"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#aa382807bf3fae8dee85006dcc4356b94">_playerStorageRepository</a></td></tr>
+<tr class="memdesc:aa382807bf3fae8dee85006dcc4356b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium magazynów graczy.  <br /></td></tr>
 <tr class="separator:aa382807bf3fae8dee85006dcc4356b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f186c99032805934a3b866c81b34bc"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#ad9f186c99032805934a3b866c81b34bc">_plantationStorageRepository</a></td></tr>
+<tr class="memdesc:ad9f186c99032805934a3b866c81b34bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium magazynów plantacji.  <br /></td></tr>
 <tr class="separator:ad9f186c99032805934a3b866c81b34bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f3e53a9450f2df35884d39f56267f2"><td class="memItemLeft" align="right" valign="top">IHubContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#a55f3e53a9450f2df35884d39f56267f2">_infoHub</a></td></tr>
+<tr class="memdesc:a55f3e53a9450f2df35884d39f56267f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontekst Huba informacyjnego.  <br /></td></tr>
 <tr class="separator:a55f3e53a9450f2df35884d39f56267f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:af3891e3753760c22e7b50522d5d12590"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_don_1_1_don_worker.html#af3891e3753760c22e7b50522d5d12590">PeriodTime</a> = 1000</td></tr>
+<tr class="memdesc:af3891e3753760c22e7b50522d5d12590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okres czasu (w milisekundach) między cyklami pracy.  <br /></td></tr>
 <tr class="separator:af3891e3753760c22e7b50522d5d12590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00017">17</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<div class="textblock"><p>Klasa wykonująca pracę w cyklach związaną z ustawianiem dona dzielnicy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab74520f3d0c36e2a8634c72dd5a8ebe9" name="ab74520f3d0c36e2a8634c72dd5a8ebe9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab74520f3d0c36e2a8634c72dd5a8ebe9">&#9670;&#160;</a></span>DonWorker()</h2>
@@ -175,7 +189,19 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00027">27</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">districtRepository</td><td>Repozytorium dzielnic.</td></tr>
+    <tr><td class="paramname">districtDonRepository</td><td>Repozytorium donów dzielnic.</td></tr>
+    <tr><td class="paramname">playerStorageRepository</td><td>Repozytorium magazynów graczy.</td></tr>
+    <tr><td class="paramname">plantationStorageRepository</td><td>Repozytorium magazynów plantacji.</td></tr>
+    <tr><td class="paramname">timer</td><td>AbpTimer do określania czasu cyklu pracy.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00061">61</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -203,7 +229,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00043">43</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00082">82</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -230,7 +258,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00052">52</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Analizuje i ustawia donów dzielnic. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00096">96</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -280,7 +310,18 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00115">115</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Wysyła dane o donie dzielnicy do użytkownika. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weHaveDon</td><td>Flaga informująca, czy dzielnica ma dona.</td></tr>
+    <tr><td class="paramname">plantationStorage</td><td>Magazyn plantacji.</td></tr>
+    <tr><td class="paramname">playerStorage</td><td>Magazyn gracza.</td></tr>
+    <tr><td class="paramname">district</td><td>Dzielnica dla której są aktualizowane dane o donie.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00166">166</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -305,7 +346,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Repozytorium donów dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00030">30</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -329,7 +372,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00019">19</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Repozytorium dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00025">25</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -353,7 +398,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00023">23</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Kontekst Huba informacyjnego. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00045">45</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -377,7 +424,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00022">22</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Repozytorium magazynów plantacji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00040">40</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -401,7 +450,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00021">21</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Repozytorium magazynów graczy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00035">35</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -425,7 +476,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00024">24</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
+<p>Okres czasu (w milisekundach) między cyklami pracy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_don_worker_8cs_source.html#l00050">50</a> of file <a class="el" href="_don_worker_8cs_source.html">DonWorker.cs</a>.</p>
 
 </div>
 </div>

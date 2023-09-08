@@ -86,6 +86,9 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Districts.TimeControl.TimeLimitedDistrictsWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa wykonująca pracę w cyklach związaną z ograniczonymi czasowo dzielnicami.  
+ <a href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.Districts.TimeControl.TimeLimitedDistrictsWorker:</div>
 <div class="dyncontent">
@@ -96,53 +99,67 @@ Inheritance diagram for CzuczenLand.ExtendingFunctionalities.BackgroundWorkers.D
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a72d18b491c9515d50d0b5b6810eb2dd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a72d18b491c9515d50d0b5b6810eb2dd0">TimeLimitedDistrictsWorker</a> (IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt; districtRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt; plantationStorageRepository, IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> &gt; playerStorageRepository, AbpTimer timer)</td></tr>
+<tr class="memdesc:a72d18b491c9515d50d0b5b6810eb2dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor, który ustawia wstrzykiwane zależności.  <br /></td></tr>
 <tr class="separator:a72d18b491c9515d50d0b5b6810eb2dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ade72d572fbf99b61e8d2fceaa5c33353"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#ade72d572fbf99b61e8d2fceaa5c33353">DoWork</a> ()</td></tr>
+<tr class="memdesc:ade72d572fbf99b61e8d2fceaa5c33353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające.  <br /></td></tr>
 <tr class="separator:ade72d572fbf99b61e8d2fceaa5c33353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0e0930368743677aa11c74bb5da480"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a9b0e0930368743677aa11c74bb5da480">ExecuteWork</a> ()</td></tr>
+<tr class="memdesc:a9b0e0930368743677aa11c74bb5da480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przygotowuje dane potrzebne do analizy dzielnic ograniczonych czasowo. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje.  <br /></td></tr>
 <tr class="separator:a9b0e0930368743677aa11c74bb5da480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ac1d1407a6c035a972ef1f5261bcfad6a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#ac1d1407a6c035a972ef1f5261bcfad6a">DefinedDistricts</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac1d1407a6c035a972ef1f5261bcfad6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista zdefiniowanych dzielnic.  <br /></td></tr>
 <tr class="separator:ac1d1407a6c035a972ef1f5261bcfad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f41a2739bd514200cb35c2b8196f0ce"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a1f41a2739bd514200cb35c2b8196f0ce">PlantationStorages</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1f41a2739bd514200cb35c2b8196f0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista magazynów plantacji zdefiniowanych dzielnic.  <br /></td></tr>
 <tr class="separator:a1f41a2739bd514200cb35c2b8196f0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1aa9662c0bbd998b53af02850be87c"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#afc1aa9662c0bbd998b53af02850be87c">PlayerStorages</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afc1aa9662c0bbd998b53af02850be87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista magazynów graczy zdefiniowanych dzielnic.  <br /></td></tr>
 <tr class="separator:afc1aa9662c0bbd998b53af02850be87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a79e8f8a8ccbe58851ceddf1540d37b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a79e8f8a8ccbe58851ceddf1540d37b72">SendDistrictEndTime</a> ()</td></tr>
-<tr class="memdesc:a79e8f8a8ccbe58851ceddf1540d37b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jeśli dzielnica zaraz ma się skończyć a użytkownikowi akurat tworzy się dziupla to czasami może ona mu się nie usunąć i będzie mógł grać na takiej dzielnicy póki nie odświeży strony ale to co zdążył zrobić zostanie zachowane do czasu końca dzielnicy. Dlatego dodono sprawdzanie dzielnic których czas ma dopiero nadejść czy czasem taka dzielnica ma jakieś magazyny plantacji.  <br /></td></tr>
+<tr class="memdesc:a79e8f8a8ccbe58851ceddf1540d37b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia nagrody otrzymane za grę na dzielnicy, której czas się skończył i wysyła informacje o końcu dostępności dzielnicy. Jeśli dzielnica zaraz ma się skończyć a użytkownikowi akurat tworzy się dziupla to czasami może ona mu się nie usunąć i będzie mógł grać na takiej dzielnicy póki nie odświeży strony ale to co zdążył zrobić zostanie zachowane do czasu końca dzielnicy. Dlatego dodono sprawdzanie dzielnic których czas ma dopiero nadejść czy czasem taka dzielnica ma jakieś magazyny plantacji.  <br /></td></tr>
 <tr class="separator:a79e8f8a8ccbe58851ceddf1540d37b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17dff0a2fe676772e748a2c16361ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#ad17dff0a2fe676772e748a2c16361ad2">DeleteCyclicDistrictsPlantationStorages</a> ()</td></tr>
+<tr class="memdesc:ad17dff0a2fe676772e748a2c16361ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa magazyny plantacji dla dzielnic cyklicznych, które już zakończyły swój czas aktywności.  <br /></td></tr>
 <tr class="separator:ad17dff0a2fe676772e748a2c16361ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee8c949b7432c72ae7409923b3e7fec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#aee8c949b7432c72ae7409923b3e7fec6">SetCyclicTime</a> ()</td></tr>
+<tr class="memdesc:aee8c949b7432c72ae7409923b3e7fec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda do aktualizacji czasu cyklicznych dzielnic.  <br /></td></tr>
 <tr class="separator:aee8c949b7432c72ae7409923b3e7fec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a51a9b235a5a43b4dfd5dabfa0f2f4341"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_district.html">District</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a51a9b235a5a43b4dfd5dabfa0f2f4341">_districtRepository</a></td></tr>
+<tr class="memdesc:a51a9b235a5a43b4dfd5dabfa0f2f4341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium dzielnic.  <br /></td></tr>
 <tr class="separator:a51a9b235a5a43b4dfd5dabfa0f2f4341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47825e41cb38c4660fe6cd30d3832c1c"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_plantation_storage.html">PlantationStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a47825e41cb38c4660fe6cd30d3832c1c">_plantationStorageRepository</a></td></tr>
+<tr class="memdesc:a47825e41cb38c4660fe6cd30d3832c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium magazynów plantacji.  <br /></td></tr>
 <tr class="separator:a47825e41cb38c4660fe6cd30d3832c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb936c12531d2894645d4c363be2fb09"><td class="memItemLeft" align="right" valign="top">readonly IRepository&lt; <a class="el" href="class_czuczen_land_1_1_extending_models_1_1_models_1_1_general_1_1_player_storage.html">PlayerStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#acb936c12531d2894645d4c363be2fb09">_playerStorageRepository</a></td></tr>
+<tr class="memdesc:acb936c12531d2894645d4c363be2fb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repozytorium magazynów graczy.  <br /></td></tr>
 <tr class="separator:acb936c12531d2894645d4c363be2fb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2987c30124ad4448855213b1899adaa"><td class="memItemLeft" align="right" valign="top">IHubContext&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#ae2987c30124ad4448855213b1899adaa">_infoHub</a></td></tr>
+<tr class="memdesc:ae2987c30124ad4448855213b1899adaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontekst Huba informacyjnego.  <br /></td></tr>
 <tr class="separator:ae2987c30124ad4448855213b1899adaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a48d9409ac4fde822661c6ea089e8cba7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_background_workers_1_1_districts_1_1_time_ce044364bc353759f4a537074e22a6c1e.html#a48d9409ac4fde822661c6ea089e8cba7">PeriodTime</a> = 60000</td></tr>
+<tr class="memdesc:a48d9409ac4fde822661c6ea089e8cba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Okres czasu (w milisekundach) między cyklami pracy.  <br /></td></tr>
 <tr class="separator:a48d9409ac4fde822661c6ea089e8cba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00017">17</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<div class="textblock"><p>Klasa wykonująca pracę w cyklach związaną z ograniczonymi czasowo dzielnicami. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a72d18b491c9515d50d0b5b6810eb2dd0" name="a72d18b491c9515d50d0b5b6810eb2dd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72d18b491c9515d50d0b5b6810eb2dd0">&#9670;&#160;</a></span>TimeLimitedDistrictsWorker()</h2>
@@ -182,7 +199,18 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00032">32</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Konstruktor, który ustawia wstrzykiwane zależności. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">districtRepository</td><td>Repozytorium dzielnic.</td></tr>
+    <tr><td class="paramname">plantationStorageRepository</td><td>Repozytorium magazynów plantacji.</td></tr>
+    <tr><td class="paramname">playerStorageRepository</td><td>Repozytorium magazynów gracza.</td></tr>
+    <tr><td class="paramname">timer</td><td>AbpTimer do określania czasu cyklu pracy.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00071">71</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -210,7 +238,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00162">162</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Usuwa magazyny plantacji dla dzielnic cyklicznych, które już zakończyły swój czas aktywności. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00215">215</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -237,7 +267,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00046">46</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Metoda wykonywana w każdym cyklu pracy pracownika. Nie wychodziło równo co sekundę. Dlatego robimy korektę. Czasami jeszcze łapie poślizg 15 milisekund ale jak dla mnie jest to już wystarczające. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00090">90</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -264,7 +296,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00055">55</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Przygotowuje dane potrzebne do analizy dzielnic ograniczonych czasowo. Musi mieć jednostkę pracy. Musi być virtual. Może być protected lub public. Inaczej nie aktualizuje zmian. Osobno po to, żeby Stopwatch zrobił prawidłowy pomiar bo na koniec metody jednostka pracy wykonuje swoje operacje. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00104">104</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -291,9 +325,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Jeśli dzielnica zaraz ma się skończyć a użytkownikowi akurat tworzy się dziupla to czasami może ona mu się nie usunąć i będzie mógł grać na takiej dzielnicy póki nie odświeży strony ale to co zdążył zrobić zostanie zachowane do czasu końca dzielnicy. Dlatego dodono sprawdzanie dzielnic których czas ma dopiero nadejść czy czasem taka dzielnica ma jakieś magazyny plantacji. </p>
+<p>Ustawia nagrody otrzymane za grę na dzielnicy, której czas się skończył i wysyła informacje o końcu dostępności dzielnicy. Jeśli dzielnica zaraz ma się skończyć a użytkownikowi akurat tworzy się dziupla to czasami może ona mu się nie usunąć i będzie mógł grać na takiej dzielnicy póki nie odświeży strony ale to co zdążył zrobić zostanie zachowane do czasu końca dzielnicy. Dlatego dodono sprawdzanie dzielnic których czas ma dopiero nadejść czy czasem taka dzielnica ma jakieś magazyny plantacji. </p>
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00084">84</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00134">134</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -320,7 +354,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00179">179</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Metoda do aktualizacji czasu cyklicznych dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00235">235</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -345,7 +381,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00019">19</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Repozytorium dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00025">25</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -369,7 +407,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00022">22</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Kontekst Huba informacyjnego. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00040">40</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -393,7 +433,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00020">20</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Repozytorium magazynów plantacji. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00030">30</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -417,7 +459,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00021">21</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Repozytorium magazynów graczy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00035">35</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -441,7 +485,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00023">23</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Okres czasu (w milisekundach) między cyklami pracy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00045">45</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -466,7 +512,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00025">25</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Lista zdefiniowanych dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00051">51</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -490,7 +538,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00027">27</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Lista magazynów plantacji zdefiniowanych dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00056">56</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>
@@ -514,7 +564,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00029">29</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
+<p>Lista magazynów graczy zdefiniowanych dzielnic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_time_limited_districts_worker_8cs_source.html#l00061">61</a> of file <a class="el" href="_time_limited_districts_worker_8cs_source.html">TimeLimitedDistrictsWorker.cs</a>.</p>
 
 </div>
 </div>

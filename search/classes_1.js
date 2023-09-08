@@ -18,8 +18,8 @@ var searchData=
   ['bonusfieldshrnames_15',['BonusFieldsHrNames',['../class_czuczen_land_1_1_extending_functionalities_1_1_consts_1_1_entities_1_1_entities_fields_namaedfb7dffb468182141dba6a45079e62.html',1,'CzuczenLand::ExtendingFunctionalities::Consts::Entities::EntitiesFieldsNames::Hr']]],
   ['bonushub_16',['BonusHub',['../class_czuczen_land_1_1_extending_functionalities_1_1_signal_r_hubs_1_1_plantation_1_1_bonus_1_1_bonus_hub.html',1,'CzuczenLand::ExtendingFunctionalities::SignalRHubs::Plantation::Bonus']]],
   ['bonusupdate_17',['BonusUpdate',['../class_czuczen_land_1_1_extending_functionalities_1_1_state_updater_1_1_updaters_1_1_plantation_s5e8b0b53c6c657426525986c23948da7.html',1,'CzuczenLand::ExtendingFunctionalities::StateUpdater::Updaters::PlantationStateUpdater::Dto']]],
-  ['bonusupdatedefinitiondto_18',['BonusUpdateDefinitionDto',['../class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_products_1_1_bonus_1_1_dto_1_1_bonus_update_definition_dto.html',1,'CzuczenLand::ExtendingFunctionalities::Services::Products::Bonus::Dto']]],
-  ['bonusupdatedto_19',['BonusUpdateDto',['../class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_products_1_1_bonus_1_1_dto_1_1_bonus_update_dto.html',1,'CzuczenLand::ExtendingFunctionalities::Services::Products::Bonus::Dto']]],
+  ['bonusupdatedto_18',['BonusUpdateDto',['../class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_products_1_1_bonus_1_1_dto_1_1_bonus_update_dto.html',1,'CzuczenLand::ExtendingFunctionalities::Services::Products::Bonus::Dto']]],
+  ['bonusupdateplayerrecorddto_19',['BonusUpdatePlayerRecordDto',['../class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_products_1_1_bonus_1_1_dto_1_1_bonus_update_player_record_dto.html',1,'CzuczenLand::ExtendingFunctionalities::Services::Products::Bonus::Dto']]],
   ['bonusviewmodel_20',['BonusViewModel',['../class_czuczen_land_1_1_web_1_1_models_1_1_extending_models_1_1_plantation_1_1_bonus_view_model.html',1,'CzuczenLand::Web::Models::ExtendingModels::Plantation']]],
   ['bundleconfig_21',['BundleConfig',['../class_czuczen_land_1_1_web_1_1_bundle_config.html',1,'CzuczenLand::Web']]]
 ];

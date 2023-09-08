@@ -81,26 +81,32 @@ $(function() {
   <div class="headertitle"><div class="title">CzuczenLand.Authorization.Accounts.IAccountAppService Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interfejs usługi obsługującej konto użytkownika.  
+ <a href="interface_czuczen_land_1_1_authorization_1_1_accounts_1_1_i_account_app_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CzuczenLand.Authorization.Accounts.IAccountAppService:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="interface_czuczen_land_1_1_authorization_1_1_accounts_1_1_i_account_app_service.png" usemap="#CzuczenLand.Authorization.Accounts.IAccountAppService_map" alt=""/>
   <map id="CzuczenLand.Authorization.Accounts.IAccountAppService_map" name="CzuczenLand.Authorization.Accounts.IAccountAppService_map">
-<area href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html" alt="CzuczenLand.Authorization.Accounts.AccountAppService" shape="rect" coords="0,112,345,136"/>
+<area href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html" title="Klasa obsługująca usługi dla konta użytkownika." alt="CzuczenLand.Authorization.Accounts.AccountAppService" shape="rect" coords="0,112,345,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2cb8ed276ab3c479d25b2b98bf5549e"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_dto_1_1_is_tenant_available_output.html">IsTenantAvailableOutput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_authorization_1_1_accounts_1_1_i_account_app_service.html#ad2cb8ed276ab3c479d25b2b98bf5549e">IsTenantAvailable</a> (<a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_dto_1_1_is_tenant_available_input.html">IsTenantAvailableInput</a> input)</td></tr>
+<tr class="memdesc:ad2cb8ed276ab3c479d25b2b98bf5549e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza dostępność dzierżawy.  <br /></td></tr>
 <tr class="separator:ad2cb8ed276ab3c479d25b2b98bf5549e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0ed39e77800a635c742822b09960d5a"><td class="memItemLeft" align="right" valign="top">Task&lt; <a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_dto_1_1_register_output.html">RegisterOutput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_czuczen_land_1_1_authorization_1_1_accounts_1_1_i_account_app_service.html#af0ed39e77800a635c742822b09960d5a">Register</a> (<a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_dto_1_1_register_input.html">RegisterInput</a> input)</td></tr>
+<tr class="memdesc:af0ed39e77800a635c742822b09960d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rejestruje użytkownika.  <br /></td></tr>
 <tr class="separator:af0ed39e77800a635c742822b09960d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_i_account_app_service_8cs_source.html#l00007">7</a> of file <a class="el" href="_i_account_app_service_8cs_source.html">IAccountAppService.cs</a>.</p>
+<div class="textblock"><p>Interfejs usługi obsługującej konto użytkownika. </p>
+
+<p class="definition">Definition at line <a class="el" href="_i_account_app_service_8cs_source.html#l00010">10</a> of file <a class="el" href="_i_account_app_service_8cs_source.html">IAccountAppService.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad2cb8ed276ab3c479d25b2b98bf5549e" name="ad2cb8ed276ab3c479d25b2b98bf5549e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2cb8ed276ab3c479d25b2b98bf5549e">&#9670;&#160;</a></span>IsTenantAvailable()</h2>
@@ -117,6 +123,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sprawdza dostępność dzierżawy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Dane wejściowe dotyczące dostępności dzierżawy.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wynik dostępności dzierżawy.</dd></dl>
 
 <p>Implemented in <a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html#a3704c0bbe2566cfbd2178b64090e0f2f">CzuczenLand.Authorization.Accounts.AccountAppService</a>.</p>
 
@@ -137,6 +152,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Rejestruje użytkownika. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Dane wejściowe dotyczące rejestracji użytkownika.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wynik rejestracji.</dd></dl>
 
 <p>Implemented in <a class="el" href="class_czuczen_land_1_1_authorization_1_1_accounts_1_1_account_app_service.html#ab636f9588ad25cb04708e3351f8ad625">CzuczenLand.Authorization.Accounts.AccountAppService</a>.</p>
 

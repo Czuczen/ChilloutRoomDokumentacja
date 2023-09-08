@@ -76,6 +76,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_crud_1_1_async_crud_1_1_async_crud_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CzuczenLand.ExtendingFunctionalities.Services.Crud.AsyncCrud.AsyncCrudHelper Class Reference</div></div>
@@ -85,6 +86,12 @@ $(function() {
 <p>Klasa pomocnicza dla asynchronicznych serwisów CRUD.  
  <a href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_crud_1_1_async_crud_1_1_async_crud_helper.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad4090e64b0b3d1c541116f11eddd2fc4"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_crud_1_1_async_crud_1_1_async_crud_helper.html#ad4090e64b0b3d1c541116f11eddd2fc4">UpdateObject&lt; TUpdate &gt;</a> (object fieldsToUpdate, object destinationObject)</td></tr>
+<tr class="memdesc:ad4090e64b0b3d1c541116f11eddd2fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje obiekt na podstawie pól do zaktualizowania. Jednostka pracy zapisze zmiany robione przez currProp?.SetValue.  <br /></td></tr>
+<tr class="separator:ad4090e64b0b3d1c541116f11eddd2fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a40c14b82bc282734372efe7d655d1d94"><td class="memItemLeft" align="right" valign="top">static readonly List&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_czuczen_land_1_1_extending_functionalities_1_1_services_1_1_crud_1_1_async_crud_1_1_async_crud_helper.html#a40c14b82bc282734372efe7d655d1d94">GenericInterfaces</a></td></tr>
@@ -94,8 +101,63 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa pomocnicza dla asynchronicznych serwisów CRUD. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_crud_helper_8cs_source.html#l00013">13</a> of file <a class="el" href="_async_crud_helper_8cs_source.html">AsyncCrudHelper.cs</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="_async_crud_helper_8cs_source.html#l00017">17</a> of file <a class="el" href="_async_crud_helper_8cs_source.html">AsyncCrudHelper.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad4090e64b0b3d1c541116f11eddd2fc4" name="ad4090e64b0b3d1c541116f11eddd2fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4090e64b0b3d1c541116f11eddd2fc4">&#9670;&#160;</a></span>UpdateObject&lt; TUpdate &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static object CzuczenLand.ExtendingFunctionalities.Services.Crud.AsyncCrud.AsyncCrudHelper.UpdateObject&lt; TUpdate &gt; </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>fieldsToUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>destinationObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aktualizuje obiekt na podstawie pól do zaktualizowania. Jednostka pracy zapisze zmiany robione przez currProp?.SetValue. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TUpdate</td><td>Typ obiektu do aktualizacji.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldsToUpdate</td><td>Pola do zaktualizowania.</td></tr>
+    <tr><td class="paramname">destinationObject</td><td>Obiekt docelowy do aktualizacji.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zaktualizowany obiekt docelowy.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_async_crud_helper_8cs_source.html#l00039">39</a> of file <a class="el" href="_async_crud_helper_8cs_source.html">AsyncCrudHelper.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a40c14b82bc282734372efe7d655d1d94" name="a40c14b82bc282734372efe7d655d1d94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40c14b82bc282734372efe7d655d1d94">&#9670;&#160;</a></span>GenericInterfaces</h2>
 
@@ -117,15 +179,15 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span>()</div>
 <div class="line">    {</div>
-<div class="line">        typeof(ICreateDefinition&lt;&gt;),</div>
-<div class="line">        typeof(IUpdateDefinition&lt;&gt;),</div>
-<div class="line">        typeof(IDeleteDefinition&lt;&gt;),</div>
+<div class="line">        typeof(ICreatePlayerRecord&lt;&gt;),</div>
+<div class="line">        typeof(IUpdatePlayerRecord&lt;&gt;),</div>
+<div class="line">        typeof(IDeletePlayerRecord&lt;&gt;),</div>
 <div class="line">        typeof(IResponseBuilder&lt;&gt;),</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Lista generycznych interfejsów. Potrzebna do rejestracji w iniekcji zależności. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_crud_helper_8cs_source.html#l00019">19</a> of file <a class="el" href="_async_crud_helper_8cs_source.html">AsyncCrudHelper.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_crud_helper_8cs_source.html#l00023">23</a> of file <a class="el" href="_async_crud_helper_8cs_source.html">AsyncCrudHelper.cs</a>.</p>
 
 </div>
 </div>
